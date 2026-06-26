@@ -1,0 +1,151 @@
+---
+title: "CV - Antonio Rodriguez Andres"
+format:
+  html:
+    toc: true
+    toc-title: "Contents"
+    toc-location: left
+    theme: cosmo
+    css: cv.css
+  pdf:
+    author: Antonio Rodriguez Andres
+    pdf-engine: lualatex
+format-links: false
+---
+
+::: {.print-only .contact-block}
+antoniorodriguezandres70@gmail.com
+:::
+
+<img src="photo-2025.jpg" alt="Profile Picture" class="profile-pic"
+style="max-height: 150px; max-width: 150px; border-radius: 50%; display: block; margin: 0 auto 20px;" />
+
+## EDUCATION
+
+**Habilitation degree -- Economics** <br> *VSB TU-Ostrava* [October 2018]{.cvdate}
+
+**Doctor of Philosophy -- Economics** <br> *University of Southern Denmark* [June 2005]{.cvdate}
+
+- Topics in Applied Econometrics. Supervisor: J.T. Lauridsen (University of Southern Denmark), and Jan Rose Skaksen (Rockwool Foundation). PhD Scholarship (2001--2005)
+
+**M.Sc. in Economics** <br> *University of Lausanne* [September 2001]{.cvdate}
+
+**M.Sc. in Industrial Economics** <br> *Universidad Carlos III de Madrid* [September 1995]{.cvdate}
+
+**B.A. in Economics** <br> *Universidad Autonoma de Madrid* [June 1993]{.cvdate}
+
+## WORK EXPERIENCE
+
+- ***Full Professor of Economics***, German University in Cairo, Faculty of Management and Technology, Department of Economics [August 2021 -- present]{.cvdate}
+
+- ***Associate Professor of Economics***, VSB TU Ostrava, Faculty of Business and Economics, Department of Economics, Ostrava, Czech Republic [May 2017 -- July 2021]{.cvdate}
+
+- ***Professor of Economics***, Universidad del Norte (UNINORTE), Business School, Department of International Business, Barranquilla, Colombia [January 2016 -- July 2017]{.cvdate}
+
+- ***Associate Professor of Economics***, Eastern Mediterranean University (EMU), Faculty of Economics, Department of Economics, Famagusta, North Cyprus [September 2013 -- August 2014]{.cvdate}
+
+- ***Associate Professor of Economics***, Al Akhawayn University (AUI), School of Business Administration, Ifrane, Morocco [January 2012 -- August 2013]{.cvdate}
+
+
+## PUBLICATIONS
+
+1. *Technological knowledge gaps: Implications for the economic performance and welfare of developing and emerging market economies* (together with Dr. Asongu and Dr. Voxi Amavilah). Forthcoming in *The Journal of Knowledge Economics*, 2026.
+
+2. *Knowledge Economy and the Economic Performance of African Countries: A Seemingly Unrelated and Recursive Approach* (joint with Dr. Voxi Amavilah). *The Journal of Knowledge Economy*, 2024.
+
+3. *Broadband use and trade facilitation: Impacts on bilateral trade of sub-Saharan countries* (joint with Dr. Margarita Billon and Dr. Ernesto Rodriguez). *African Development Review*, 2023.
+
+4. *Knowledge economy classification in African countries: A model-based clustering approach* (joint with Dr. Amavilah and Dr. Abraham Otero). *Information Technology for Development*, 2022.
+
+5. *Using deep learning neural networks to predict the knowledge economy index for developing and emerging economies* (joint with Dr. Amavilah and Dr. Otero). *Expert Systems with Applications*, 2022.
+
+6. *Convergence in suicide rates in FSU: A clustering approach* (with Dr. Amavilah). *Applied Economics Letters*, 30(9), 1183--1188.
+
+7. *Evaluation of technology clubs by clustering: a cautionary note* (joint with Dr. Amavilah and Dr. Abraham Otero). *Applied Economics*, 2021.
+
+8. *Trajectories of knowledge economy in SSA and MENA countries* (joint with Dr. Asongu). *Technology in Society*, 2020.
+
+9. *Do emigrants' remittances cause Dutch disease? A developing countries case study* (joint with Dr. Polat). *The Economic and Labour Relations Review*, 30(1), 59--76.
+
+10. *Effects of globalization on peace and stability: Implications for governance and the knowledge economy of African countries*. *Technological Forecasting and Social Change*, 2017.
+
+11. *Trade openness, labor market rigidity, and growth: A dynamic panel data analysis* (joint with Dr. Polat). *The Economic and Labour Relations Review*, 28(4), 555--564.
+
+12. *Is corruption really bad for inequality? Evidence from Latin America* (joint with Dr. Carlyn Dobson). *Journal of Development Studies*, 2011.
+
+## BOOKS & BOOK CHAPTERS
+
+1. **A Bibliometric Literature Review: Measurements of Economic Resilience**. In: Ghoneim, H. et al. (eds) Positive Performativity and Transformative Management Research. Springer Proceedings in Business and Economics, 2025.
+
+2. **A Socio-Economic and Demographic Analysis of Mental Well-Being: The Indian Case**  
+Nova Science Publishers, February 2021 (editors: Prof. Antonio Rodriguez Andres & Prof. Siddhartha Mitra), ISBN: 978-1-53619-023-6.
+
+3. **Forecasting Business Software Piracy Rates: A machine learning approach** (together with H. Kaur). In Lechman, E. (Editor). Routledge. 2020.
+
+4. **Linkages between Formal Institutions, ICT Adoption and Inclusive Human Development in Sub-Saharan Africa**. In Lechman, E., Marszk, A., & Kaur, H. (eds), *Catalyzing development through ICT adoption*. Springer. 2017
+
+5. **Measuring the quality of copyright institutions** (together with Nora El Bialy). *Encyclopedia of Law and Economics*. Springer. New York. 2014.
+
+
+## PAPERS UNDER REVIEW
+
+- **The Interrelation between CEO Activism and Activist Entrepreneurship: A Bibliometric Analysis** (Joint with Dr. Abdelwahab, Dr. Raghda El Ebrashi, and Mariam El Zamly). Submitted to *Social Responsibility Journal*, 2026
+
+- **Identifying structural breaks in infant mortality: Evidence from Angola, 1950-2023** (joint with Rabia Naqvi, UCC, Ireland). Submitted to *Population Health Metrics*, 2026.
+
+- **What Works for Monitoring Suicide Deaths? Comparing Model Specifications in Spain** (joint with Sei Takane, Kansai Airports). Submitted to *Social Psychiatry and Psychiatric Epidemiology*, 2026.
+
+- **Systematic Review of Financial Inclusion in Low Income Countries Using Livelihoods, Empowerment and Market-Systems Framework** (joint with Dr. Atem), 2026. Submitted to *Development Studies Research*. 
+
+- **Critical Mineral Supply Concentration and Price Volatility: Panel Evidence from Six Minerals, 2010–2024** (joint with Dr. Voxi Amavilah). Submitted to *Applied Economics Letters*, 2026.
+
+
+- **Bundled Indicators to Monitor Intervention priorities for reducing the sex gap in suicide mortality** (joint with Sei Takane). Submitted to: *Annals of Epidemiology*. 2026
+
+
+## ONGOING RESEARCH
+
+- **Retractions in Business and Economics Research: Patterns and Determinants of Retraction lag** (joint with Dr. Noha Tarek and Dr. Savina Kirilova). Target journal: *Scientometrics*, 2026.
+
+- **Energy intensity and digitalization in Nigeria: A machine learning approach** (joint with Dr. Ike Naga).Target journal: *Technological Forecasting and Social Change*, 2026.
+
+- **Institutional Inequalities and the Propensity to Innovate: Evidence from Egyptian SMEs** (joint with Dr. Salma Yasser Tosson, and Dr. Dalia Abdelwahab). In **The Digital Disruption of Financial Services: International Perspectives**, edited by Piotr Płatkowski, Ewa Lechman, Javier Barbero Jimenez and Margarita Billon Curras. Routledge. December 2026.
+
+- **Mapping the Intellectual Structure of Nonmarket strategy research: A Topic Modeling Approach** (joint with Dr. Dalia Abdelwahab). Target journal: **Business \& Society**, 2026.
+
+- **FDI and Global Value Chain Integration in Croatia: From Investment Attraction to Domestic Upgrading**. In preparation for the Handbook of Innovation in Croatia. Expected. December 2026.
+
+## SKILLS
+
+- **Programming**: R, Python, Quarto
+- **Data Analysis**: Panel Data, Machine Learning, Bibliometric Analysis, Binary Choice Models, Time Series Analysis
+- **Tools**: Quarto, LaTeX, Scopus
+- **AI tools**: Claude Code, Chat GPT 5.5, Consensus.
+
+## PRESENTATIONS AND WORKSHOPS
+
+- *Clustering emerging economies: A comparative analysis of institutional configurations using K-prototype algorithm* (September 2024, 22nd SSRNet International Conference on Corporate Social Responsibility, GUC campus, Cairo, Egypt)
+
+- *The impact of digitalization on tax compliance in EU countries* (May 2024, Digital Transformation Society Conference, Naples, Italy)
+
+- *Health care use by immigrants and natives: Lessons for Poland from the Danish Experience* (May 2023, University of Warsaw, Center for Migration Research)
+
+
+## CONTACT
+
+📧 **Email**: [antonio.andres@guc.edu.eg](mailto:antonio.andres@guc.edu.eg)  
+🌐 **Google Scholar**: [scholar.google.com](https://scholar.google.com/citations?user=CR6pB10AAAAJ&hl=en)  
+🔗 **ORCID**: [0000-0001-6578-5118](https://orcid.org/0000-0001-6578-5118)
+ 
+
+## REFERENCES
+
+**Prof. Ewa Lechman**  
+Department of Economics, University of Gdansk, Gdansk, Poland  
+📧 ewa.lechman@pg.edu.pl 
+*Relationship: Habilitation Assessment Committee, colleague*
+
+**Associate Professor. Dr. Ernesto Rodriguez Crespo**
+Department of Applied Economics, Universidad Autonoma de Madrid, Madrid, Spain
+📧 ernesto.rodriguez@uam.es 
+
