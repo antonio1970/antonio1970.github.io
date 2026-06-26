@@ -21,7 +21,7 @@ body {
   font-size: 15px;
   line-height: 1.7;
   color: var(--text);
-  background-color: #eef2f7;
+  background-color: #eef2f7 !important;
 }
 
 /* --- Main content area --- */
@@ -30,8 +30,8 @@ body {
 }
 
 main.content {
-  background: #fff;
-  padding: 2em 2.5em;
+  background: #fff !important;
+  padding: 2em 2.5em !important;
   border-radius: 8px;
   box-shadow: 0 2px 16px rgba(27,47,78,0.10);
 }
@@ -58,19 +58,20 @@ h1.title {
 /* ============================================================
    SECTION HEADINGS
    ============================================================ */
-h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 0.95em;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--navy);
-  background: var(--light);
-  border-left: 4px solid var(--accent);
-  padding: 0.45em 0.9em;
-  margin-top: 2.2em;
-  margin-bottom: 1em;
-  border-radius: 0 4px 4px 0;
+h2, h2.anchored {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 0.95em !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.14em !important;
+  color: var(--navy) !important;
+  background: var(--light) !important;
+  border-left: 4px solid var(--accent) !important;
+  border-bottom: none !important;
+  padding: 0.45em 0.9em !important;
+  margin-top: 2.2em !important;
+  margin-bottom: 1em !important;
+  border-radius: 0 4px 4px 0 !important;
 }
 
 h3 {
