@@ -1,615 +1,727 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Antonio Rodríguez Andrés — Professor of Economics</title>
+<meta name="description" content="Antonio Rodríguez Andrés — Professor of Economics. Applied, development, and health economics; machine learning and the knowledge economy." />
+<meta name="author" content="Antonio Rodríguez Andrés" />
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<!-- Open Graph -->
+<meta property="og:title" content="Antonio Rodríguez Andrés — Professor of Economics" />
+<meta property="og:description" content="Applied, development, and health economics · machine learning · the knowledge economy." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="photo.jpg" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-
-<title>CV - Antonio Rodriguez Andres</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
+:root{
+  --bg:#faf7f2;
+  --bg-2:#fffdfa;
+  --surface:#ffffff;
+  --ink:#181d1b;
+  --ink-soft:#495451;
+  --ink-faint:#7a847f;
+  --line:#e7e1d6;
+  --accent:#0d7a6a;
+  --accent-deep:#084a42;
+  --accent-soft:#e3f2ee;
+  --gold:#b9892f;
+  --shadow:0 1px 2px rgba(20,40,35,.04), 0 8px 30px rgba(20,40,35,.06);
+  --shadow-lg:0 20px 60px rgba(20,40,35,.14);
+  --radius:18px;
+  --radius-sm:12px;
+  --max:1120px;
+  --sans:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+}
+:root[data-theme="dark"]{
+  --bg:#0e1412;
+  --bg-2:#121a17;
+  --surface:#16201c;
+  --ink:#eef1ee;
+  --ink-soft:#b4beb9;
+  --ink-faint:#7f8b85;
+  --line:#26322d;
+  --accent:#3fd0b0;
+  --accent-deep:#8bebd4;
+  --accent-soft:#12332b;
+  --gold:#e0b662;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 34px rgba(0,0,0,.4);
+  --shadow-lg:0 24px 70px rgba(0,0,0,.55);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--sans);font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacing:-.01em;margin:0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+section{padding:96px 0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 26px}
+
+/* ---------- decorative background ---------- */
+.bg-grid{
+  position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background-image:radial-gradient(var(--line) 1px, transparent 1px);
+  background-size:34px 34px;opacity:.5;
+  -webkit-mask-image:radial-gradient(circle at 50% 0%, #000 0%, transparent 70%);
+          mask-image:radial-gradient(circle at 50% 0%, #000 0%, transparent 70%);
+}
+.bg-glow{
+  position:fixed;z-index:-2;pointer-events:none;filter:blur(90px);opacity:.5;
+}
+.bg-glow.a{top:-160px;right:-120px;width:520px;height:520px;
+  background:radial-gradient(circle,var(--accent-soft),transparent 65%);}
+.bg-glow.b{bottom:8%;left:-160px;width:520px;height:520px;
+  background:radial-gradient(circle,rgba(185,137,47,.18),transparent 65%);}
+
+/* ---------- nav ---------- */
+header.nav{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:saturate(150%) blur(14px);
+  background:color-mix(in srgb,var(--bg) 78%,transparent);
+  border-bottom:1px solid transparent;transition:border-color .3s,background .3s;
+}
+header.nav.scrolled{border-bottom-color:var(--line)}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:14px 26px;display:flex;align-items:center;gap:20px}
+.brand{font-family:var(--serif);font-weight:600;font-size:1.18rem;letter-spacing:-.02em;color:var(--ink);white-space:nowrap}
+.brand .dot{color:var(--accent)}
+.nav-links{margin-left:auto;display:flex;gap:6px;align-items:center}
+.nav-links a{
+  color:var(--ink-soft);font-size:.9rem;font-weight:500;
+  padding:8px 14px;border-radius:99px;transition:.2s;position:relative;
+}
+.nav-links a:hover{color:var(--ink);background:var(--accent-soft);text-decoration:none}
+.nav-links a.active{color:var(--accent-deep);background:var(--accent-soft)}
+:root[data-theme="dark"] .nav-links a.active{color:var(--accent)}
+.theme-btn{
+  width:40px;height:40px;border-radius:99px;border:1px solid var(--line);
+  background:var(--surface);color:var(--ink);cursor:pointer;display:grid;place-items:center;
+  transition:.2s;font-size:1.05rem;
+}
+.theme-btn:hover{border-color:var(--accent);color:var(--accent);transform:rotate(-12deg)}
+.menu-btn{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font-size:1.2rem}
+
+/* ---------- hero ---------- */
+.hero{padding:76px 0 64px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:56px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent-deep);background:var(--accent-soft);
+  padding:7px 15px;border-radius:99px;margin-bottom:22px;
+}
+:root[data-theme="dark"] .eyebrow{color:var(--accent-deep)}
+.eyebrow .pulse{width:8px;height:8px;border-radius:99px;background:var(--accent);box-shadow:0 0 0 0 var(--accent);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 60%,transparent)}70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.hero h1{font-size:clamp(2.6rem,5.6vw,4.3rem);letter-spacing:-.025em;margin-bottom:6px}
+.hero h1 .accent{color:var(--accent);font-style:italic;font-weight:500}
+.hero .role{font-size:clamp(1.05rem,2vw,1.3rem);color:var(--ink-soft);font-weight:500;margin:10px 0 4px}
+.hero .affil{color:var(--ink-faint);font-size:1rem}
+.hero .lede{margin:26px 0 30px;font-size:1.12rem;color:var(--ink-soft);max-width:44ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:.95rem;
+  padding:13px 22px;border-radius:99px;border:1px solid transparent;cursor:pointer;transition:.22s;
+}
+.btn-primary{background:var(--accent);color:#fff}
+:root[data-theme="dark"] .btn-primary{color:#08110e}
+.btn-primary:hover{background:var(--accent-deep);text-decoration:none;transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;transform:translateY(-2px)}
+
+.portrait-wrap{position:relative;justify-self:center}
+.portrait-ring{
+  position:absolute;inset:-16px;border-radius:50%;
+  background:conic-gradient(from 140deg,var(--accent),var(--gold),var(--accent-deep),var(--accent));
+  filter:blur(2px);opacity:.55;animation:spin 18s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.portrait{
+  position:relative;width:min(340px,72vw);aspect-ratio:1;border-radius:50%;
+  object-fit:cover;border:6px solid var(--bg-2);box-shadow:var(--shadow-lg);
+}
+.portrait-badge{
+  position:absolute;bottom:14px;right:-6px;background:var(--surface);
+  border:1px solid var(--line);border-radius:14px;padding:10px 14px;box-shadow:var(--shadow);
+  font-size:.82rem;font-weight:600;color:var(--ink);display:flex;align-items:center;gap:8px;
+}
+.portrait-badge b{color:var(--accent)}
+
+/* ---------- stat strip ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:64px}
+.stat{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 20px;box-shadow:var(--shadow);
+}
+.stat .num{font-family:var(--serif);font-size:2.1rem;font-weight:600;color:var(--accent);line-height:1}
+.stat .lbl{margin-top:8px;font-size:.82rem;color:var(--ink-faint);font-weight:500;letter-spacing:.02em}
+
+/* ---------- section headings ---------- */
+.sec-head{margin-bottom:44px;max-width:660px}
+.sec-kicker{
+  font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
+  display:flex;align-items:center;gap:12px;margin-bottom:16px;
+}
+.sec-kicker::before{content:"";width:30px;height:2px;background:var(--accent);border-radius:2px}
+.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem)}
+.sec-head p{color:var(--ink-soft);margin-top:14px;font-size:1.06rem}
+
+/* ---------- about ---------- */
+#about{background:linear-gradient(180deg,transparent,var(--bg-2) 40%,var(--bg-2) 60%,transparent)}
+.about-grid{display:grid;grid-template-columns:1.3fr .85fr;gap:48px;align-items:start}
+.about-body p{color:var(--ink-soft);margin:0 0 18px;font-size:1.08rem}
+.about-body p strong{color:var(--ink);font-weight:600}
+.about-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px;box-shadow:var(--shadow);
+}
+.about-card h4{font-size:1.05rem;margin-bottom:16px;display:flex;align-items:center;gap:9px}
+.fact{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--line);font-size:.95rem}
+.fact:first-of-type{border-top:none}
+.fact .k{color:var(--ink-faint);min-width:96px;font-weight:500}
+.fact .v{color:var(--ink);font-weight:500}
+.edu-item{padding:14px 0;border-top:1px solid var(--line)}
+.edu-item .deg{font-weight:600;color:var(--ink)}
+.edu-item .school{font-size:.9rem;color:var(--ink-faint)}
+
+/* ---------- research interests ---------- */
+.interest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.icard{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px;box-shadow:var(--shadow);transition:.28s;position:relative;overflow:hidden;
+}
+.icard::before{content:"";position:absolute;left:0;top:0;height:100%;width:4px;background:var(--accent);transform:scaleY(0);transform-origin:top;transition:.3s}
+.icard:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+.icard:hover::before{transform:scaleY(1)}
+.icard .ic{font-size:1.7rem;margin-bottom:14px;display:inline-grid;place-items:center;width:52px;height:52px;border-radius:14px;background:var(--accent-soft)}
+.icard h3{font-size:1.2rem;margin-bottom:8px}
+.icard p{color:var(--ink-soft);font-size:.96rem;margin:0}
+.tag-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px;justify-content:center}
+.tag{
+  font-size:.86rem;font-weight:500;color:var(--ink-soft);
+  padding:9px 16px;border-radius:99px;border:1px solid var(--line);background:var(--surface);transition:.2s;
+}
+.tag:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+
+/* ---------- teaching ---------- */
+#teaching{background:linear-gradient(180deg,transparent,var(--bg-2) 40%,var(--bg-2) 60%,transparent)}
+.teach-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.teach-col h4{font-size:1.1rem;margin-bottom:18px;display:flex;align-items:center;gap:10px;color:var(--ink)}
+.teach-col h4 .ic{width:34px;height:34px;border-radius:10px;background:var(--accent-soft);display:grid;place-items:center;font-size:1rem}
+.course{
+  display:flex;gap:14px;align-items:baseline;padding:13px 0;border-top:1px solid var(--line);
+}
+.course:first-of-type{border-top:none}
+.course .lvl{
+  font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent-deep);background:var(--accent-soft);padding:4px 9px;border-radius:6px;white-space:nowrap;flex-shrink:0;min-width:74px;text-align:center;
+}
+:root[data-theme="dark"] .course .lvl{color:var(--accent)}
+.course .cname{color:var(--ink);font-weight:500;font-size:.98rem}
+.course .cname span{display:block;color:var(--ink-faint);font-weight:400;font-size:.84rem}
+.teach-note{margin-top:30px;padding:20px 24px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--radius-sm);color:var(--ink-soft);font-size:.98rem}
+
+/* ---------- publications ---------- */
+.pub-controls{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:30px}
+.search-box{position:relative;flex:1;min-width:220px}
+.search-box input{
+  width:100%;padding:13px 16px 13px 44px;border-radius:99px;border:1px solid var(--line);
+  background:var(--surface);color:var(--ink);font-family:var(--sans);font-size:.95rem;transition:.2s;
+}
+.search-box input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.search-box .si{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--ink-faint)}
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.chip{
+  font-size:.85rem;font-weight:500;color:var(--ink-soft);cursor:pointer;
+  padding:9px 15px;border-radius:99px;border:1px solid var(--line);background:var(--surface);transition:.2s;user-select:none;
+}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+.chip.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+:root[data-theme="dark"] .chip.active{color:#08110e}
+.pub-count{font-size:.9rem;color:var(--ink-faint);margin-bottom:18px}
+.pub-list{display:flex;flex-direction:column;gap:2px}
+.pub{
+  display:grid;grid-template-columns:76px 1fr auto;gap:20px;align-items:start;
+  padding:20px 22px;border-radius:var(--radius-sm);transition:.2s;border:1px solid transparent;
+}
+.pub:hover{background:var(--surface);border-color:var(--line);box-shadow:var(--shadow)}
+.pub .yr{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:var(--accent);line-height:1}
+.pub .body .ptitle{font-weight:600;color:var(--ink);font-size:1.04rem;line-height:1.4}
+.pub .body .authors{color:var(--ink-faint);font-size:.9rem;margin-top:4px}
+.pub .body .venue{color:var(--ink-soft);font-size:.92rem;margin-top:6px;font-style:italic}
+.pub .body .venue a{font-style:normal;font-weight:500}
+.pub .meta{display:flex;flex-direction:column;align-items:flex-end;gap:7px;flex-shrink:0}
+.q-badge{font-size:.72rem;font-weight:700;letter-spacing:.03em;padding:4px 9px;border-radius:6px;white-space:nowrap}
+.q1{background:#0d7a6a;color:#fff}
+.q2{background:#3a9b8a;color:#fff}
+.q3{background:#e3f2ee;color:#0d5a4d}
+.q4{background:#f1ece1;color:#8a6a2a}
+:root[data-theme="dark"] .q1{background:#3fd0b0;color:#08110e}
+:root[data-theme="dark"] .q2{background:#2a9d86;color:#eef1ee}
+:root[data-theme="dark"] .q3{background:#1c3a33;color:#8beed6}
+:root[data-theme="dark"] .q4{background:#3a3122;color:#e0b662}
+.topic-badge{font-size:.72rem;color:var(--ink-faint);font-weight:500;white-space:nowrap}
+.no-results{padding:40px;text-align:center;color:var(--ink-faint)}
+
+.subsec-title{font-family:var(--serif);font-size:1.35rem;font-weight:600;margin:56px 0 10px;display:flex;align-items:center;gap:12px}
+.subsec-title .ic{font-size:1.2rem}
+.mini-list{display:flex;flex-direction:column;gap:2px}
+.mini{padding:16px 22px;border-radius:var(--radius-sm);border:1px solid transparent;transition:.2s}
+.mini:hover{background:var(--surface);border-color:var(--line)}
+.mini .mt{color:var(--ink);font-weight:500;font-size:.98rem}
+.mini .mv{color:var(--ink-faint);font-size:.88rem;margin-top:3px}
+.mini .mv .yb{color:var(--accent);font-weight:600}
+.status{font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:6px;margin-right:8px;vertical-align:middle;white-space:nowrap}
+.st-fc{background:var(--accent);color:#fff}
+:root[data-theme="dark"] .st-fc{color:#08110e}
+.st-ur{background:var(--accent-soft);color:var(--accent-deep)}
+:root[data-theme="dark"] .st-ur{color:var(--accent)}
+.st-ip{background:#f1ece1;color:#8a6a2a}
+:root[data-theme="dark"] .st-ip{background:#3a3122;color:#e0b662}
+
+/* ---------- contact ---------- */
+#contact{background:linear-gradient(180deg,transparent,var(--bg-2))}
+.contact-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:48px;box-shadow:var(--shadow-lg);text-align:center;max-width:760px;margin:0 auto;position:relative;overflow:hidden;
+}
+.contact-card::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% -20%,var(--accent-soft),transparent 60%);pointer-events:none}
+.contact-card h2{font-size:clamp(1.8rem,3.4vw,2.4rem);margin-bottom:12px;position:relative}
+.contact-card p{color:var(--ink-soft);margin-bottom:30px;position:relative}
+.contact-links{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;position:relative}
+.clink{
+  display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:14px;
+  border:1px solid var(--line);background:var(--bg-2);color:var(--ink);font-weight:500;font-size:.94rem;transition:.22s;
+}
+.clink:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;transform:translateY(-3px);box-shadow:var(--shadow)}
+.clink .ci{font-size:1.15rem}
+
+footer{padding:44px 0;border-top:1px solid var(--line);text-align:center;color:var(--ink-faint);font-size:.88rem}
+footer .brand{font-size:1rem;display:block;margin-bottom:6px}
+
+/* ---------- reveal animation ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.portrait-ring{animation:none}.pulse{animation:none}}
+
+/* ---------- responsive ---------- */
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:40px;text-align:center}
+  .hero .lede{margin-left:auto;margin-right:auto}
+  .cta{justify-content:center}
+  .eyebrow{margin-inline:auto}
+  .portrait-wrap{order:-1}
+  .about-grid,.teach-grid{grid-template-columns:1fr}
+  .interest-grid{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+  section{padding:70px 0}
+  .nav-links{display:none}
+  .menu-btn{display:grid;place-items:center}
+  .nav-links.open{display:flex;position:absolute;top:66px;left:0;right:0;flex-direction:column;
+    background:var(--bg-2);border-bottom:1px solid var(--line);padding:14px 26px;gap:4px}
+  .nav-links.open a{width:100%}
+  .interest-grid{grid-template-columns:1fr}
+  .pub{grid-template-columns:52px 1fr;gap:14px;padding:18px 14px}
+  .pub .meta{grid-column:2;flex-direction:row;align-items:center}
+  .pub .yr{font-size:1.2rem}
+  .contact-card{padding:32px 22px}
 }
 </style>
-
-
-<script src="cv1_files/libs/clipboard/clipboard.min.js"></script>
-<script src="cv1_files/libs/quarto-html/quarto.js" type="module"></script>
-<script src="cv1_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="cv1_files/libs/quarto-html/popper.min.js"></script>
-<script src="cv1_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="cv1_files/libs/quarto-html/anchor.min.js"></script>
-<link href="cv1_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="cv1_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="cv1_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="cv1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="cv1_files/libs/bootstrap/bootstrap-67270d1595a62d14f123c043d4fb2f18.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-
-
-<link rel="stylesheet" href="cv.css">
 </head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-glow a"></div>
+<div class="bg-glow b"></div>
 
-<body class="quarto-light">
-
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
-<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
-  <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Contents</h2>
-   
-  <ul>
-  <li><a href="#biography" id="toc-biography" class="nav-link active" data-scroll-target="#biography">BIOGRAPHY</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">EDUCATION</a></li>
-  <li><a href="#work-experience" id="toc-work-experience" class="nav-link" data-scroll-target="#work-experience">WORK EXPERIENCE</a></li>
-  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">PUBLICATIONS</a></li>
-  <li><a href="#books-book-chapters" id="toc-books-book-chapters" class="nav-link" data-scroll-target="#books-book-chapters">BOOKS &amp; BOOK CHAPTERS</a></li>
-  <li><a href="#papers-under-review" id="toc-papers-under-review" class="nav-link" data-scroll-target="#papers-under-review">PAPERS UNDER REVIEW</a></li>
-  <li><a href="#ongoing-research" id="toc-ongoing-research" class="nav-link" data-scroll-target="#ongoing-research">ONGOING RESEARCH</a></li>
-  <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">SKILLS</a></li>
-  <li><a href="#presentations-and-workshops" id="toc-presentations-and-workshops" class="nav-link" data-scroll-target="#presentations-and-workshops">PRESENTATIONS AND WORKSHOPS</a></li>
-  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">CONTACT</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">REFERENCES</a></li>
-  </ul>
-</nav>
-</div>
-<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-</div>
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">CV - Antonio Rodriguez Andres</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <span class="brand">Antonio Rodríguez Andrés<span class="dot">.</span></span>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">◐</button>
+    </nav>
   </div>
-  
-
-
 </header>
 
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-text reveal">
+        <span class="eyebrow"><span class="pulse"></span> Professor of Economics</span>
+        <h1>Antonio <span class="accent">Rodríguez</span> Andrés</h1>
+        <p class="role">Applied Health · Development Economics · Machine Learning</p>
+        <p class="affil">Independent Scholar · Former Marie Curie Fellow</p>
+        <p class="lede">Empirical economist applying quantitative and machine-learning methods to questions in health economics, development, and the knowledge economy across developing and emerging economies.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#publications">📚 Explore publications</a>
+          <a class="btn btn-ghost" href="#contact">✉ Get in touch</a>
+        </div>
+      </div>
+      <div class="portrait-wrap reveal">
+        <div class="portrait-ring"></div>
+        <img class="portrait" src="photo.jpg" alt="Portrait of Antonio Rodríguez Andrés" />
+        <div class="portrait-badge">🎓 <span>PhD, <b>SDU Denmark</b></span></div>
+      </div>
+    </div>
 
-<div class="print-only contact-block">
-<p>antoniorodriguezandres70@gmail.com</p>
-</div>
-<p><img src="photo-2025.jpg" alt="Profile Picture" class="profile-pic" style="max-height: 150px; max-width: 150px; border-radius: 50%; display: block; margin: 0 auto 20px;"></p>
-<section id="biography" class="level2">
-<h2 class="anchored" data-anchor-id="biography">BIOGRAPHY</h2>
-<p>Dr.&nbsp;Antonio Rodríguez Andrés has been taking up academic positions as associate professor of Economics at different international universities: Denmark, Colombia, Spain, Chile, Morocco, Cyprus, Czech Republic, and Egypt. He got a PhD in Economics at University of Southern Denmark. He has a master degree in Industrial Economics from Universidad Carlos III de Madrid.</p>
-<p>His research focuses on quantitative methods, applied health economics, and law and economics. He has published in international refereed journals with high impact factors such as Journal of Business Ethics, Health Policy, and Technological Forecasting and Social Change, and Expert Systems with Applications.</p>
-<p>He is also currently on the international advisory board of The Economic and Labour Relations Review. Besides that, he has been also an international coordinator for international students in the Faculty of Economics at UCJC, Spain. He has also served on several accreditation committees during his academic experience.</p>
-<p>Dr.&nbsp;Antonio has actively participated in international conferences and symposiums as a speaker as well as an organizer. He has also ample teaching experience at both graduate and undergraduate levels. He has been teaching in several subjects within Economics, Econometrics, and Statistics. He has also supervised master students and internship papers. Dr.&nbsp;Antonio has also applied for external grants from different sources: Economic Research Forum (ERF), and Forum EuroMediterraneen des Instituts de Sciences Economiques (FEMISE).</p>
-<p>Lastly, he took up a prestigious Marie Curie Fellowship at the University of Sheffield under the supervision of Dr.&nbsp;Jennifer Roberts (Full Professor of Health Economics, University of Sheffield).</p>
-</section>
-<section id="education" class="level2">
-<h2 class="anchored" data-anchor-id="education">EDUCATION</h2>
-<p><strong>Habilitation degree – Economics</strong> <br> <em>VSB TU-Ostrava</em> <span class="cvdate">October 2018</span></p>
-<p><strong>Doctor of Philosophy – Economics</strong> <br> <em>University of Southern Denmark</em> <span class="cvdate">June 2005</span></p>
-<ul>
-<li>Topics in Applied Econometrics. Supervisor: J.T. Lauridsen (University of Southern Denmark), and Jan Rose Skaksen (Rockwool Foundation). PhD Scholarship (2001–2005)</li>
-</ul>
-<p><strong>M.Sc. in Economics</strong> <br> <em>University of Lausanne</em> <span class="cvdate">September 2001</span></p>
-<p><strong>M.Sc. in Industrial Economics</strong> <br> <em>Universidad Carlos III de Madrid</em> <span class="cvdate">September 1995</span></p>
-<p><strong>B.A. in Economics</strong> <br> <em>Universidad Autonoma de Madrid</em> <span class="cvdate">June 1993</span></p>
-</section>
-<section id="work-experience" class="level2">
-<h2 class="anchored" data-anchor-id="work-experience">WORK EXPERIENCE</h2>
-<ul>
-<li><p><strong><em>Full Professor of Economics</em></strong>, German University in Cairo, Faculty of Management and Technology, Department of Economics <span class="cvdate">August 2021 – July 2026</span></p></li>
-<li><p><strong><em>Associate Professor of Economics</em></strong>, VSB TU Ostrava, Faculty of Business and Economics, Department of Economics, Ostrava, Czech Republic <span class="cvdate">May 2017 – July 2021</span></p></li>
-<li><p><strong><em>Professor of Economics</em></strong>, Universidad del Norte (UNINORTE), Business School, Department of International Business, Barranquilla, Colombia <span class="cvdate">January 2016 – July 2017</span></p></li>
-<li><p><strong><em>Associate Professor of Economics</em></strong>, Eastern Mediterranean University (EMU), Faculty of Economics, Department of Economics, Famagusta, North Cyprus <span class="cvdate">September 2013 – August 2014</span></p></li>
-<li><p><strong><em>Associate Professor of Economics</em></strong>, Al Akhawayn University (AUI), School of Business Administration, Ifrane, Morocco <span class="cvdate">January 2012 – August 2013</span></p></li>
-</ul>
-</section>
-<section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">PUBLICATIONS</h2>
-<ol type="1">
-<li><p><em>HIV viral load suppression and associated factors among PLHIV with non-communicable diseases in Uganda’s Teso Region: a cross-sectional retrospective study</em> (joint with Oryokot, Ssentongo, Oluka, et al.). <em>AIDS Research and Therapy</em>, 23, 31, 2026.</p></li>
-<li><p><em>Technological knowledge gaps: Implications for the economic performance and welfare of developing and emerging market economies</em> (together with Dr.&nbsp;Asongu and Dr.&nbsp;Voxi Amavilah). Forthcoming in <em>The Journal of Knowledge Economics</em>, 2026.</p></li>
-<li><p><em>Knowledge Economy and the Economic Performance of African Countries: A Seemingly Unrelated and Recursive Approach</em> (joint with Dr.&nbsp;Voxi Amavilah). <em>The Journal of Knowledge Economy</em>, 2024.</p></li>
-<li><p><em>Broadband use and trade facilitation: Impacts on bilateral trade of sub-Saharan countries</em> (joint with Dr.&nbsp;Margarita Billon and Dr.&nbsp;Ernesto Rodriguez). <em>African Development Review</em>, 2023.</p></li>
-<li><p><em>Knowledge economy classification in African countries: A model-based clustering approach</em> (joint with Dr.&nbsp;Amavilah and Dr.&nbsp;Abraham Otero). <em>Information Technology for Development</em>, 2022.</p></li>
-<li><p><em>Using deep learning neural networks to predict the knowledge economy index for developing and emerging economies</em> (joint with Dr.&nbsp;Amavilah and Dr.&nbsp;Otero). <em>Expert Systems with Applications</em>, 2022.</p></li>
-<li><p><em>Convergence in suicide rates in FSU: A clustering approach</em> (with Dr.&nbsp;Amavilah). <em>Applied Economics Letters</em>, 30(9), 1183–1188.</p></li>
-<li><p><em>Evaluation of technology clubs by clustering: a cautionary note</em> (joint with Dr.&nbsp;Amavilah and Dr.&nbsp;Abraham Otero). <em>Applied Economics</em>, 2021.</p></li>
-<li><p><em>Trajectories of knowledge economy in SSA and MENA countries</em> (joint with Dr.&nbsp;Asongu). <em>Technology in Society</em>, 2020.</p></li>
-<li><p><em>Do emigrants’ remittances cause Dutch disease? A developing countries case study</em> (joint with Dr.&nbsp;Polat). <em>The Economic and Labour Relations Review</em>, 30(1), 59–76.</p></li>
-<li><p><em>Effects of globalization on peace and stability: Implications for governance and the knowledge economy of African countries</em>. <em>Technological Forecasting and Social Change</em>, 2017.</p></li>
-<li><p><em>Trade openness, labor market rigidity, and growth: A dynamic panel data analysis</em> (joint with Dr.&nbsp;Polat). <em>The Economic and Labour Relations Review</em>, 28(4), 555–564.</p></li>
-<li><p><em>Is corruption really bad for inequality? Evidence from Latin America</em> (joint with Dr.&nbsp;Carlyn Dobson). <em>Journal of Development Studies</em>, 2011.</p></li>
-</ol>
-</section>
-<section id="books-book-chapters" class="level2">
-<h2 class="anchored" data-anchor-id="books-book-chapters">BOOKS &amp; BOOK CHAPTERS</h2>
-<ol type="1">
-<li><p><strong>A Bibliometric Literature Review: Measurements of Economic Resilience</strong>. In: Ghoneim, H. et al.&nbsp;(eds) Positive Performativity and Transformative Management Research. Springer Proceedings in Business and Economics, 2025.</p></li>
-<li><p><strong>A Socio-Economic and Demographic Analysis of Mental Well-Being: The Indian Case</strong><br>
-Nova Science Publishers, February 2021 (editors: Prof.&nbsp;Antonio Rodriguez Andres &amp; Prof.&nbsp;Siddhartha Mitra), ISBN: 978-1-53619-023-6.</p></li>
-<li><p><strong>Forecasting Business Software Piracy Rates: A machine learning approach</strong> (together with H. Kaur). In Lechman, E. (Editor). Routledge. 2020.</p></li>
-<li><p><strong>Linkages between Formal Institutions, ICT Adoption and Inclusive Human Development in Sub-Saharan Africa</strong>. In Lechman, E., Marszk, A., &amp; Kaur, H. (eds), <em>Catalyzing development through ICT adoption</em>. Springer. 2017</p></li>
-<li><p><strong>Measuring the quality of copyright institutions</strong> (together with Nora El Bialy). <em>Encyclopedia of Law and Economics</em>. Springer. New York. 2014.</p></li>
-</ol>
-</section>
-<section id="papers-under-review" class="level2">
-<h2 class="anchored" data-anchor-id="papers-under-review">PAPERS UNDER REVIEW</h2>
-<ul>
-<li><p><strong>The Interrelation between CEO Activism and Activist Entrepreneurship: A Bibliometric Analysis</strong> (Joint with Dr.&nbsp;Abdelwahab, Dr.&nbsp;Raghda El Ebrashi, and Mariam El Zamly). Submitted to <em>Social Responsibility Journal</em>, 2026</p></li>
-<li><p><strong>Identifying structural breaks in infant mortality: Evidence from Angola, 1950-2023</strong> (joint with Rabia Naqvi, UCC, Ireland). Submitted to <em>Population Health Metrics</em>, 2026.</p></li>
-<li><p><strong>What Works for Monitoring Suicide Deaths? Comparing Model Specifications in Spain</strong> (joint with Sei Takane, Kansai Airports). Submitted to <em>Social Psychiatry and Psychiatric Epidemiology</em>, 2026.</p></li>
-<li><p><strong>Systematic Review of Financial Inclusion in Low Income Countries Using Livelihoods, Empowerment and Market-Systems Framework</strong> (joint with Dr.&nbsp;Atem), 2026. Submitted to <em>Development Studies Research</em>.</p></li>
-<li><p><strong>Critical Mineral Supply Concentration and Price Volatility: Panel Evidence from Six Minerals, 2010–2024</strong> (joint with Dr.&nbsp;Voxi Amavilah). Submitted to <em>Applied Economics Letters</em>, 2026.</p></li>
-<li><p><strong>Bundled Indicators to Monitor Intervention priorities for reducing the sex gap in suicide mortality</strong> (joint with Sei Takane). Submitted to: <em>Annals of Epidemiology</em>. 2026</p></li>
-</ul>
-</section>
-<section id="ongoing-research" class="level2">
-<h2 class="anchored" data-anchor-id="ongoing-research">ONGOING RESEARCH</h2>
-<ul>
-<li><p><strong>Retractions in Business and Economics Research: Patterns and Determinants of Retraction lag</strong> (joint with Dr.&nbsp;Noha Tarek and Dr.&nbsp;Savina Kirilova). Target journal: <em>Scientometrics</em>, 2026.</p></li>
-<li><p><strong>Energy intensity and digitalization in Nigeria: A machine learning approach</strong> (joint with Dr.&nbsp;Ike Naga).Target journal: <em>Technological Forecasting and Social Change</em>, 2026.</p></li>
-<li><p><strong>Institutional Inequalities and the Propensity to Innovate: Evidence from Egyptian SMEs</strong> (joint with Dr.&nbsp;Salma Yasser Tosson, and Dr.&nbsp;Dalia Abdelwahab). In <strong>The Digital Disruption of Financial Services: International Perspectives</strong>, edited by Piotr Płatkowski, Ewa Lechman, Javier Barbero Jimenez and Margarita Billon Curras. Routledge. December 2026.</p></li>
-<li><p><strong>Mapping the Intellectual Structure of Nonmarket strategy research: A Topic Modeling Approach</strong> (joint with Dr.&nbsp;Dalia Abdelwahab). Target journal: <strong>Business &amp; Society</strong>, 2026.</p></li>
-<li><p><strong>FDI and Global Value Chain Integration in Croatia: From Investment Attraction to Domestic Upgrading</strong>. In preparation for the Handbook of Innovation in Croatia. Expected. December 2026.</p></li>
-</ul>
-</section>
-<section id="skills" class="level2">
-<h2 class="anchored" data-anchor-id="skills">SKILLS</h2>
-<ul>
-<li><strong>Programming</strong>: R, Python, Quarto</li>
-<li><strong>Data Analysis</strong>: Panel Data, Machine Learning, Bibliometric Analysis, Binary Choice Models, Time Series Analysis</li>
-<li><strong>Tools</strong>: Quarto, LaTeX, Scopus</li>
-<li><strong>AI tools</strong>: Claude Code, Chat GPT 5.5, Consensus.</li>
-</ul>
-</section>
-<section id="presentations-and-workshops" class="level2">
-<h2 class="anchored" data-anchor-id="presentations-and-workshops">PRESENTATIONS AND WORKSHOPS</h2>
-<ul>
-<li><p><em>Clustering emerging economies: A comparative analysis of institutional configurations using K-prototype algorithm</em> (September 2024, 22nd SSRNet International Conference on Corporate Social Responsibility, GUC campus, Cairo, Egypt)</p></li>
-<li><p><em>The impact of digitalization on tax compliance in EU countries</em> (May 2024, Digital Transformation Society Conference, Naples, Italy)</p></li>
-<li><p><em>Health care use by immigrants and natives: Lessons for Poland from the Danish Experience</em> (May 2023, University of Warsaw, Center for Migration Research)</p></li>
-</ul>
-</section>
-<section id="contact" class="level2">
-<h2 class="anchored" data-anchor-id="contact">CONTACT</h2>
-<p>📧 <strong>Email</strong>: <a href="mailto:antoniorodriguezandres70@gmail.com">antoniorodriguezandres70@gmail.com</a><br>
-🌐 <strong>Google Scholar</strong>: <a href="https://scholar.google.com/citations?user=CR6pB10AAAAJ&amp;hl=en">scholar.google.com</a><br>
-🔗 <strong>ORCID</strong>: <a href="https://orcid.org/0000-0001-6578-5118">0000-0001-6578-5118</a></p>
-</section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">REFERENCES</h2>
-<p><strong>Prof.&nbsp;Ewa Lechman</strong><br>
-Department of Economics, University of Gdansk, Gdansk, Poland<br>
-📧 <a href="mailto:ewa.lechman@pg.edu.pl">ewa.lechman@pg.edu.pl</a><br>
-<em>Relationship:</em> Habilitation Assessment Committee; colleague</p>
-<p><strong>Assoc. Prof.&nbsp;Dr.&nbsp;Ernesto Rodriguez Crespo</strong><br>
-Department of Applied Economics, Universidad Autónoma de Madrid, Madrid, Spain<br>
-📧 <a href="mailto:ernesto.rodriguez@uam.es">ernesto.rodriguez@uam.es</a><br>
-<em>Relationship:</em> co-author</p>
+    <div class="stats reveal">
+      <div class="stat"><div class="num" data-count="46">0</div><div class="lbl">Peer-reviewed articles</div></div>
+      <div class="stat"><div class="num" data-count="20" data-suffix="+">0</div><div class="lbl">Years in academia</div></div>
+      <div class="stat"><div class="num" data-count="10" data-suffix="+">0</div><div class="lbl">Countries taught in</div></div>
+      <div class="stat"><div class="num" data-count="2">0</div><div class="lbl">Editorial boards</div></div>
+    </div>
+  </div>
 </section>
 
-</main>
-<!-- /main column -->
-<script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
-        }
-      }
-      return false;
-    }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
-    }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
-    });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
-    }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
-      } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
-      }
-    }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
-          }
-        } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
-            if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
-      } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
-        });
-      }
-    }
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">About me</div>
+      <h2>A short bio</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-body reveal">
+        <p><strong>Antonio Rodríguez Andrés</strong> is a Professor of Economics whose research applies quantitative and <strong>machine-learning methods</strong> to questions in health economics and development economics. His work examines the determinants of population health and well-being, the diffusion of technology and the <strong>knowledge economy</strong> across developing and emerging economies, and the institutional foundations of economic performance.</p>
+        <p>He holds a <strong>PhD in Economics</strong> from the University of Southern Denmark, an M.Sc. in Economics from the University of Lausanne, and an M.Sc. from Universidad Carlos III de Madrid. His research has appeared in international peer-reviewed journals including <em>Technological Forecasting and Social Change</em>, <em>Expert Systems with Applications</em>, <em>Health Policy</em>, the <em>Journal of Development Studies</em>, and the <em>Journal of the Knowledge Economy</em>.</p>
+        <p>He has held academic appointments in <strong>eight countries</strong> — Denmark, Colombia, Spain, Chile, Morocco, Cyprus, the Czech Republic, and Egypt — most recently as Full Professor of Economics at the <strong>German University in Cairo (2021–2026)</strong>. He was awarded a <strong>Marie Curie Fellowship</strong> at the University of Sheffield and serves on the editorial boards of <em>The Economic and Labour Relations Review</em> and <em>PLOS ONE (Economics)</em>.</p>
+      </div>
+      <aside class="reveal">
+        <div class="about-card">
+          <h4>📌 At a glance</h4>
+          <div class="fact"><span class="k">Title</span><span class="v">Professor of Economics</span></div>
+          <div class="fact"><span class="k">Status</span><span class="v">Independent Scholar</span></div>
+          <div class="fact"><span class="k">Nationality</span><span class="v">Spanish</span></div>
+          <div class="fact"><span class="k">Distinction</span><span class="v">Former Marie Curie Fellow</span></div>
+          <div class="fact"><span class="k">Board</span><span class="v">Economic &amp; Labour Relations Review</span></div>
+        </div>
+        <div class="about-card" style="margin-top:22px">
+          <h4>🎓 Education</h4>
+          <div class="edu-item"><div class="deg">Docent (Habilitation), Economics</div><div class="school">VŠB–TU Ostrava, Czech Republic · 2018</div></div>
+          <div class="edu-item"><div class="deg">PhD in Economics</div><div class="school">University of Southern Denmark, Odense · 2005</div></div>
+          <div class="edu-item"><div class="deg">M.A. in Economics</div><div class="school">Université de Lausanne, Switzerland · 1998</div></div>
+          <div class="edu-item"><div class="deg">M.A. in Economics</div><div class="school">Universidad Carlos III de Madrid · 1995</div></div>
+          <div class="edu-item"><div class="deg">B.A. in Economics</div><div class="school">Universidad Autónoma de Madrid · 1993</div></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH INTERESTS ============ -->
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Research interests</div>
+      <h2>What I work on</h2>
+      <p>Empirical questions in development and health, increasingly answered with modern computational and econometric tools.</p>
+    </div>
+    <div class="interest-grid">
+      <div class="icard reveal"><div class="ic">🌍</div><h3>Knowledge Economy &amp; Innovation</h3><p>Measuring and classifying the knowledge economy in Africa and emerging markets; intellectual property rights, technological progress, and innovation systems.</p></div>
+      <div class="icard reveal"><div class="ic">🧠</div><h3>Health &amp; Well-being</h3><p>Applied health economics — suicide and mental health, health-care utilization, and the socio-economic determinants of well-being.</p></div>
+      <div class="icard reveal"><div class="ic">🤖</div><h3>Machine Learning &amp; Clustering</h3><p>Deep learning, model-based clustering, and unsupervised pattern recognition applied to economic development and classification problems.</p></div>
+      <div class="icard reveal"><div class="ic">📊</div><h3>Applied Econometrics</h3><p>Panel-data models, time-series and change-point analysis, and instrumental-variable methods for causal questions.</p></div>
+      <div class="icard reveal"><div class="ic">🏛️</div><h3>Development &amp; Institutions</h3><p>Corruption, governance, trade facilitation, and the role of formal institutions in economic performance across Africa and MENA.</p></div>
+      <div class="icard reveal"><div class="ic">📚</div><h3>Bibliometrics &amp; Piracy</h3><p>Bibliometric and scientometric analysis; software piracy, copyright protection, and IPR harmonization.</p></div>
+    </div>
+    <div class="tag-row reveal">
+      <span class="tag">Applied Economics</span>
+      <span class="tag">Panel Data Models</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Bibliometric Analysis</span>
+      <span class="tag">Health Economics</span>
+      <span class="tag">Economic Development</span>
+      <span class="tag">Intellectual Property Rights</span>
+      <span class="tag">Knowledge Economy</span>
+      <span class="tag">Cluster Analysis</span>
+      <span class="tag">Europe · Africa · Middle East</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEACHING ============ -->
+<section id="teaching">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Teaching</div>
+      <h2>In the classroom</h2>
+      <p>More than twenty years teaching economics and econometrics — on-site and online — across Europe, Latin America, Africa, and the Middle East.</p>
+    </div>
+    <div class="teach-grid">
+      <div class="teach-col reveal">
+        <h4><span class="ic">📐</span> Econometrics &amp; Methods</h4>
+        <div class="course"><span class="lvl">Graduate</span><span class="cname">Advanced Econometrics<span>German University in Cairo</span></span></div>
+        <div class="course"><span class="lvl">Undergrad</span><span class="cname">Introduction to Econometrics<span>German University in Cairo</span></span></div>
+        <div class="course"><span class="lvl">Graduate</span><span class="cname">Panel Data Models<span>Eastern Mediterranean University</span></span></div>
+        <div class="course"><span class="lvl">Graduate</span><span class="cname">Dynamic &amp; Financial Econometrics<span>University of Southern Denmark</span></span></div>
+        <div class="course"><span class="lvl">Graduate</span><span class="cname">Data Analysis &amp; Economic Analysis with R<span>VŠB–TU Ostrava</span></span></div>
+        <div class="course"><span class="lvl">Graduate</span><span class="cname">Research Methodology<span>Al Akhawayn · Ventspils · UNICAF</span></span></div>
+      </div>
+      <div class="teach-col reveal">
+        <h4><span class="ic">🌐</span> Economic Theory &amp; Fields</h4>
+        <div class="course"><span class="lvl">Undergrad</span><span class="cname">Microeconomics<span>German University in Cairo · Al Akhawayn</span></span></div>
+        <div class="course"><span class="lvl">Undergrad</span><span class="cname">Macroeconomics &amp; Macro Theory<span>German University in Cairo · UCLM · EMU</span></span></div>
+        <div class="course"><span class="lvl">Graduate</span><span class="cname">Health Economics (MPH &amp; PhD)<span>Aarhus University</span></span></div>
+        <div class="course"><span class="lvl">Undergrad</span><span class="cname">International Economics &amp; Finance<span>Universidad del Norte, Colombia</span></span></div>
+        <div class="course"><span class="lvl">Undergrad</span><span class="cname">Political Economy<span>German University in Cairo</span></span></div>
+        <div class="course"><span class="lvl">Graduate</span><span class="cname">Data Visualization<span>UNIR — Master for Journalists (online)</span></span></div>
+      </div>
+    </div>
+    <div class="teach-note reveal">
+      <strong>Doctoral &amp; thesis supervision:</strong> main or joint supervisor of PhD candidates at the German University in Cairo and VŠB–TU Ostrava (gender-wage gaps, innovation systems, corruption, macroeconomic resilience, CEO activism), together with dozens of MBA, bachelor, and master theses across five institutions.
+    </div>
+  </div>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section id="publications">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Publications</div>
+      <h2>Selected refereed articles</h2>
+      <p>A curated, searchable list of peer-reviewed journal articles. Filter by theme or search by title, co-author, or journal. Quartile ranks (JCR/SJR) are shown where available.</p>
+    </div>
+
+    <div class="pub-controls reveal">
+      <div class="search-box">
+        <span class="si">🔍</span>
+        <input type="text" id="pubSearch" placeholder="Search title, co-author, or journal…" aria-label="Search publications" />
+      </div>
+    </div>
+    <div class="filters reveal" id="filters">
+      <span class="chip active" data-topic="all">All</span>
+      <span class="chip" data-topic="knowledge">Knowledge Economy</span>
+      <span class="chip" data-topic="health">Health &amp; Suicide</span>
+      <span class="chip" data-topic="piracy">Piracy &amp; IPR</span>
+      <span class="chip" data-topic="development">Development &amp; Institutions</span>
+      <span class="chip" data-topic="ict">ICT &amp; Trade</span>
+      <span class="chip" data-topic="environment">Environment</span>
+    </div>
+
+    <div class="pub-count reveal" id="pubCount"></div>
+    <div class="pub-list" id="pubList"></div>
+
+    <h3 class="subsec-title reveal"><span class="ic">📖</span> Books &amp; Book Chapters</h3>
+    <div class="mini-list reveal" id="bookList"></div>
+
+    <h3 class="subsec-title reveal"><span class="ic">📝</span> Forthcoming, Under Review &amp; In Preparation</h3>
+    <div class="mini-list reveal" id="wipList"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <h2>Let's connect</h2>
+      <p>Open to research collaboration, PhD supervision, seminars, and policy work.</p>
+      <div class="contact-links">
+        <a class="clink" href="mailto:antoniorodriguezandres70@gmail.com"><span class="ci">✉</span> antoniorodriguezandres70@gmail.com</a>
+        <a class="clink" href="https://orcid.org/0000-0001-6578-5118" target="_blank" rel="noopener"><span class="ci">🆔</span> ORCID</a>
+        <a class="clink" href="https://scholar.google.com/citations?user=CR6pB10AAAAJ&hl=es" target="_blank" rel="noopener"><span class="ci">🎓</span> Google Scholar</a>
+        <a class="clink" href="https://github.com/antonio1970" target="_blank" rel="noopener"><span class="ci">💻</span> GitHub</a>
+        <a class="clink" href="https://www.linkedin.com/in/docent-antonio-rodriguez-andres-70382897/" target="_blank" rel="noopener"><span class="ci">🔗</span> LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="brand">Antonio Rodríguez Andrés<span style="color:var(--accent)">.</span></span>
+    Professor of Economics · Independent Scholar
+    <div style="margin-top:8px">© <span id="yr"></span> · Built with care.</div>
+  </div>
+</footer>
+
+<script>
+/* ---------- publications data ---------- */
+const PUBS = [
+  {y:2026,a:"Oryokot, B., Ssentongo, S., Oluka, A.I. et al. (with Rodríguez, A.)",t:"HIV viral-load suppression and associated factors among PLHIV with non-communicable diseases in Uganda's Teso Region: a cross-sectional retrospective study",v:"AIDS Research and Therapy, 23, 31",q:null,topic:"health",l:"https://doi.org/10.1186/s12981-026-00852-x"},
+  {y:2023,a:"Elasy, S., Amavilah, V., Yousri, D. & Rodríguez, A.",t:"The Corruption Trap in Africa: Causes and Consequences",v:"Asian Development Perspectives, 14(2), 65–82",q:null,topic:"development"},
+  {y:2023,a:"Billon, M., Rodríguez-Crespo, E. & Rodríguez Andrés, A.",t:"Broadband use and trade facilitation: Impacts on bilateral trade of Sub-Saharan countries",v:"African Development Review, 35(2), 113–125",q:1,topic:"ict",l:"https://onlinelibrary.wiley.com/doi/10.1111/1467-8268.12698"},
+  {y:2023,a:"Rodríguez Andrés, A. & Amavilah, V.",t:"Technological knowledge progress: Were famous laws almost correct in developing and emerging economies?",v:"PLoS ONE, 18(5): e0283107",q:1,topic:"knowledge",l:"https://doi.org/10.1371/journal.pone.0283107"},
+  {y:2024,a:"Rodríguez Andrés, A. & Amavilah, V.",t:"Knowledge Economy and the Economic Performance of African Countries: A Seemingly Unrelated and Recursive Approach",v:"Journal of the Knowledge Economy",q:2,topic:"knowledge",l:"https://link.springer.com/article/10.1007/s13132-022-01033-7"},
+  {y:2022,a:"Rodríguez Andrés, A. & Amavilah, V.H.",t:"Convergence in suicide rates in the FSU: A clustering approach",v:"Applied Economics Letters, 30(9), 1183–1188",q:3,topic:"health",l:"https://www.tandfonline.com/doi/abs/10.1080/13504851.2022.2041167"},
+  {y:2022,a:"Gitto, L. & Rodríguez Andrés, A.",t:"The impact of ICT on psychological well-being among elderly people: A university of the third age in southern Italy",v:"International Journal of Social Sciences and Education Research, 8(2), 111–119",q:null,topic:"health"},
+  {y:2021,a:"Rodríguez Andrés, A., Otero, A. & Amavilah, V.H.",t:"Using deep learning neural networks to predict the knowledge economy index for developing and emerging economies",v:"Expert Systems with Applications, 184, 115514",q:1,topic:"knowledge",l:"https://doi.org/10.1016/j.eswa.2021.115514"},
+  {y:2021,a:"Rodríguez Andrés, A., Amavilah, V.H.S. & Otero, A.",t:"Evaluation of technology clubs by clustering: A cautionary note",v:"Applied Economics, 53(52), 5989–6001",q:2,topic:"knowledge",l:"https://doi.org/10.1080/00036846.2021.1934393"},
+  {y:2021,a:"Rodríguez Andrés, A., Otero, A. & Amavilah, V.H.",t:"Knowledge Economy classification in African countries: A model-based clustering approach",v:"Information Technology for Development",q:1,topic:"knowledge",l:"https://doi.org/10.1080/02681102.2021.1950597"},
+  {y:2020,a:"Gitto, L., Noh, Y.-H. & Rodríguez Andrés, A.",t:"Have lifestyle factors led to perceiving a higher level of stress? Implications for mental-health policy in South Korea",v:"Journal of Asian Public Policy, 13(3), 257–276",q:1,topic:"health",l:"https://doi.org/10.1080/17516234.2018.1563035"},
+  {y:2020,a:"Rodríguez, A., Leigh, A. & Kim, D.H.",t:"Sex-specific impact of changes in job status on suicidal ideation",v:"Crisis, 41(2)",q:2,topic:"health"},
+  {y:2020,a:"Asongu, S. & Rodríguez, A.",t:"Trajectories of knowledge economy in SSA and MENA countries",v:"Technology in Society, 63",q:1,topic:"knowledge",l:"https://doi.org/10.1016/j.techsoc.2019.03.002"},
+  {y:2019,a:"Polat, B. & Rodríguez, A.",t:"Do emigrants' remittances cause Dutch disease? A developing-countries case study",v:"The Economic and Labour Relations Review, 30(1), 59–76",q:3,topic:"development"},
+  {y:2019,a:"Asongu, S., Amavilah, V. & Rodríguez, A.",t:"Business Dynamics, Knowledge Economy, and the Economic Performance of African Countries",v:"Information Development",q:2,topic:"knowledge"},
+  {y:2017,a:"Polat, B. & Rodríguez, A.",t:"Trade openness, labor-market rigidity, and growth: A dynamic panel-data analysis",v:"The Economic and Labour Relations Review, 28(4), 555–564",q:3,topic:"development",l:"https://doi.org/10.1177/1035304617722904"},
+  {y:2017,a:"Amavilah, V., Asongu, S. & Rodríguez, A.",t:"Effects of globalization on peace and stability: Implications for governance and the knowledge economy of African countries",v:"Technological Forecasting and Social Change, 122, 91–103",q:1,topic:"knowledge"},
+  {y:2017,a:"Rodríguez, A. & Asongu, S.",t:"The impact of software piracy on human development: Evidence from Africa",v:"International Review of Applied Economics, 31(5), 585–607",q:2,topic:"piracy"},
+  {y:2016,a:"Rodríguez, A. & Salahodjaev, R.",t:"Do cognitively able societies nurture entrepreneurs?",v:"Economics Bulletin, 36(3), 1453–1462",q:4,topic:"development"},
+  {y:2016,a:"Rodríguez, A. & Rustemoglu, H.",t:"Determinants of CO₂ emissions in Brazil and Russia, 1992–2011: A decomposition analysis",v:"Environmental Science and Policy, 58, 95–106",q:1,topic:"environment",l:"https://doi.org/10.1016/j.envsci.2016.01.012"},
+  {y:2016,a:"El Bialy, N., Hawash, R. & Rodríguez, A.",t:"Explaining software piracy using a new set of indicators",v:"Journal of the Knowledge Economy, 7(2), 526–544",q:2,topic:"piracy"},
+  {y:2015,a:"Rodríguez, A. & Asongu, S.",t:"Global trajectories, dynamics, and tendencies of business software piracy: Benchmarking IPR harmonization",v:"Journal of Economic Studies, 43(5), 780–800",q:2,topic:"piracy"},
+  {y:2015,a:"Rodríguez, A., Gitto, L. & Noh, Y.-H.",t:"An instrumental-variable probit analysis of depressed mood in Korea: gender differences and socio-economic factors",v:"International Journal of Health Policy and Management, 4(8), 523–530",q:1,topic:"health"},
+  {y:2015,a:"Rodríguez, A., Asongu, S. & Amavilah, V.",t:"The impact of formal institutions on the knowledge economy",v:"Journal of the Knowledge Economy, 6(4), 1034–1062",q:2,topic:"knowledge"},
+  {y:2014,a:"Dasgupta, P., Mitra, S., Chakraborty, B. & Rodríguez, A.",t:"Relative significance of socio-economic triggers for mental-health outcomes in India",v:"Journal of Behavioral and Experimental Economics, 50, 50–57",q:2,topic:"health"},
+  {y:2014,a:"Brinda, E.M., Enemark, U. & Rodríguez, A.",t:"Out-of-pocket and catastrophic health expenditure in Tanzania: National Household Survey",v:"BMC International Health and Human Rights, 14:5",q:1,topic:"health",l:"https://doi.org/10.1186/1472-698X-14-5"},
+  {y:2013,a:"Rodríguez, A. & Asongu, S.",t:"Global dynamics timelines for IPR harmonization against software piracy",v:"Economics Bulletin, 33, 874–880",q:4,topic:"piracy"},
+  {y:2013,a:"Rodríguez, A. & Asongu, S.",t:"Fighting piracy, protecting intellectual property rights: which governance tools matter in Africa?",v:"Journal of Business Ethics, 118, 667–682",q:1,topic:"piracy"},
+  {y:2013,a:"Ponzo, M., Rodríguez, A. & De Luca, G.",t:"Immigrant status and health-care utilization in Italy",v:"International Journal of Health Care Finance and Economics, 13, 1–31",q:3,topic:"health"},
+  {y:2012,a:"Halicioglu, F., Yamamura, E. & Rodríguez, A.",t:"Modeling crime in Japan",v:"Economic Modelling, 29, 1640–1645",q:1,topic:"development"},
+  {y:2012,a:"Yamamura, E., Selini, M. & Rodríguez, A.",t:"Does corruption affect suicide? Empirical evidence from OECD countries",v:"Atlantic Economic Journal, 40, 133–145",q:4,topic:"health"},
+  {y:2012,a:"Rodríguez, A. & Goel, R.K.",t:"Does software piracy affect economic growth? Evidence across countries",v:"Journal of Policy Modeling, 34, 284–295",q:1,topic:"piracy"},
+  {y:2011,a:"Rodríguez, A., Yamamura, E. & Halicioglu, F.",t:"Socio-economic determinants of suicide in Japan",v:"Journal of Socio-Economics, 40, 723–731",q:2,topic:"health"},
+  {y:2011,a:"Rodríguez, A. & Goel, R.K.",t:"Corruption and global software piracy: Are piracy rates greater in more corrupt nations?",v:"Policy & Internet, 3, 1–22",q:1,topic:"piracy"},
+  {y:2011,a:"Gallet, C.A. & Rodríguez, A.",t:"International evidence on the determinants of alcohol-advertising restrictions",v:"Applied Economics Letters, 18, 1359–1362",q:3,topic:"health"},
+  {y:2011,a:"Dobson, C. & Rodríguez, A.",t:"Is corruption really bad for inequality? Evidence from Latin America",v:"Journal of Development Studies, 47, 959–976",q:2,topic:"development"},
+  {y:2011,a:"Hempstead, K. & Rodríguez, A.",t:"Gun control and suicide: The impact of state firearm regulations in the US, 1995–2004",v:"Health Policy, 101, 95–103",q:1,topic:"health"},
+  {y:2011,a:"Rodríguez, A. & Halicioglu, F.",t:"Testing the hypotheses of the natural suicide rates: Further evidence from OECD data",v:"Economic Modelling, 28, 22–26",q:1,topic:"health"},
+  {y:2010,a:"Rodríguez, A. & Halicioglu, F.",t:"Determinants of suicides in Denmark: Evidence from time-series data",v:"Health Policy, 98, 263–269",q:1,topic:"health"},
+  {y:2010,a:"Rodríguez, A., Collings, S. & Qin, P.",t:"Sex-specific impact of socio-economic factors on suicide risk: A population-based case-control study in Denmark",v:"European Journal of Public Health, 20, 265–270",q:1,topic:"health"},
+  {y:2008,a:"Minoiu, C. & Rodríguez, A.",t:"The effect of public spending on suicide: Evidence from US state data",v:"The Journal of Socio-Economics, 37, 237–261",q:2,topic:"health"},
+  {y:2006,a:"Rodríguez, A.",t:"The relationship between copyright software protection and piracy: Evidence from Europe",v:"European Journal of Law and Economics, 21, 29–51",q:2,topic:"piracy"},
+  {y:2006,a:"Rodríguez, A.",t:"Software piracy and income inequality",v:"Applied Economics Letters, 13, 101–105",q:3,topic:"piracy"},
+  {y:2005,a:"Rodríguez, A.",t:"Income inequality, unemployment and suicide: A panel-data investigation of 15 European countries",v:"Applied Economics, 37, 439–451",q:2,topic:"health"},
+  {y:2004,a:"Rodríguez, A.",t:"Determinants of self-reported mental health using the British Household Panel Survey",v:"Journal of Mental Health Policy and Economics, 3, 99–106",q:1,topic:"health"},
+  {y:1998,a:"Rodríguez, A. & Pérez-Amaral, T.",t:"Universal service and demand for telephone lines in Spain",v:"Information Economics and Policy, 10, 501–514",q:1,topic:"ict"}
+];
+
+const BOOKS = [
+  {y:2026,t:"A Bibliometric Literature Review: Measurements of Economic Resilience",v:"In Positive Performativity and Transformative Management Research (Springer Proceedings in Business and Economics), Springer, Cham. With N. Zoher & R. El-Ebrashi."},
+  {y:2022,t:"Circular economy and entrepreneurship in emerging economies: opportunities and challenges (Guest editorial)",v:"Journal of Entrepreneurship in Emerging Economies, 14(5), 673–677. With Panait, Hysa, Raimi & Kruja."},
+  {y:2021,t:"A Socio-Economic and Demographic Analysis of Mental Well-Being: The Indian Case",v:"Nova Science Publishers (co-edited with S. Mitra). ISBN 978-1-53619-023-6."},
+  {y:2020,t:"Forecasting Business Software Piracy Rates: A machine-learning approach",v:"In E. Lechman (Ed.), Routledge. With H. Kaur."},
+  {y:2017,t:"Linkages between Formal Institutions, ICT Adoption and Inclusive Human Development in Sub-Saharan Africa",v:"In Catalyzing Development through ICT Adoption, Springer. With Asongu & Amavilah."},
+  {y:2014,t:"Measuring the quality of copyright institutions",v:"Encyclopedia of Law and Economics, pp. 1–9, Springer, New York. With N. El-Bialy."},
+  {y:2014,t:"Características del delito en las provincias en Argentina",v:"In Investigaciones sobre Economía de la Delincuencia en Argentina, Editorial Dunken, Buenos Aires. With A.M. Cerro."},
+  {y:null,t:"Prevalence and Predictors of Symptoms of Mental Disorders in Ghana (Ch. 3)",v:"African Political, Economic, and Security Issues, Nova Science Publishers. With I. Addai."}
+];
+
+const WIP = [
+  {s:"Forthcoming",t:"Technological knowledge gaps: Implications for the economic performance and welfare of developing and emerging market economies",v:"The Journal of the Knowledge Economy, 2026. With S. Asongu & V. Amavilah."},
+  {s:"Under review",t:"The Interrelation between CEO Activism and Activist Entrepreneurship: A Bibliometric Analysis",v:"Social Responsibility Journal, 2026. With D. Abdelwahab, R. El-Ebrashi & M. El Zamly."},
+  {s:"Under review",t:"Identifying structural breaks in infant mortality: Evidence from Angola, 1950–2023",v:"Population Health Metrics, 2026. With R. Naqvi (UCC, Ireland)."},
+  {s:"Under review",t:"What Works for Monitoring Suicide Deaths? Comparing Model Specifications in Spain",v:"Social Psychiatry and Psychiatric Epidemiology, 2026. With S. Takane."},
+  {s:"Under review",t:"Critical Mineral Supply Concentration and Price Volatility: Panel Evidence from Six Minerals, 2010–2024",v:"Applied Economics Letters, 2026. With V. Amavilah."},
+  {s:"Under review",t:"Systematic Review of Financial Inclusion in Low-Income Countries Using a Livelihoods, Empowerment and Market-Systems Framework",v:"Development Studies Research, 2026. With Dr. Atem."},
+  {s:"Under review",t:"Bundled Indicators to Monitor Intervention Priorities for Reducing the Sex Gap in Suicide Mortality",v:"Annals of Epidemiology, 2026. With S. Takane."},
+  {s:"In preparation",t:"Retractions in Business and Economics Research: Patterns and Determinants of Retraction Lag",v:"Target: Scientometrics, 2026. With N. Tarek & S. Kirilova."},
+  {s:"In preparation",t:"Energy Intensity and Digitalization in Nigeria: A Machine-Learning Approach",v:"Target: Technological Forecasting and Social Change, 2026. With I. Nwaka."},
+  {s:"In preparation",t:"Institutional Inequalities and the Propensity to Innovate: Evidence from Egyptian SMEs",v:"In The Digital Disruption of Financial Services (Routledge), Dec 2026. With S. Yasser Tosson & D. Abdelwahab."},
+  {s:"In preparation",t:"Mapping the Intellectual Structure of Nonmarket Strategy Research: A Topic-Modeling Approach",v:"Target: Business & Society, 2026. With D. Abdelwahab."},
+  {s:"In preparation",t:"FDI and Global Value Chain Integration in Croatia: From Investment Attraction to Domestic Upgrading",v:"Handbook of Innovation in Croatia, expected Dec 2026."}
+];
+
+const topicLabels={knowledge:"Knowledge Economy",health:"Health & Suicide",piracy:"Piracy & IPR",development:"Development",ict:"ICT & Trade",environment:"Environment"};
+
+/* ---------- render publications ---------- */
+const pubList=document.getElementById('pubList');
+const pubCount=document.getElementById('pubCount');
+let activeTopic='all', query='';
+
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function renderPubs(){
+  const q=query.trim().toLowerCase();
+  const rows=PUBS.filter(p=>{
+    const okTopic=activeTopic==='all'||p.topic===activeTopic;
+    const okQ=!q||(p.t+' '+p.a+' '+p.v).toLowerCase().includes(q);
+    return okTopic&&okQ;
+  }).sort((a,b)=>b.y-a.y);
+  pubCount.textContent=`Showing ${rows.length} of ${PUBS.length} articles`;
+  if(!rows.length){pubList.innerHTML='<div class="no-results">No publications match your search.</div>';return;}
+  pubList.innerHTML=rows.map(p=>{
+    const qb=p.q?`<span class="q-badge q${p.q}">JCR Q${p.q}</span>`:'';
+    const title=p.l?`<a href="${p.l}" target="_blank" rel="noopener">${esc(p.t)}</a>`:esc(p.t);
+    return `<div class="pub">
+      <div class="yr">${p.y}</div>
+      <div class="body">
+        <div class="ptitle">${title}</div>
+        <div class="authors">${esc(p.a)}</div>
+        <div class="venue">${esc(p.v)}</div>
+      </div>
+      <div class="meta">${qb}<span class="topic-badge">${topicLabels[p.topic]||''}</span></div>
+    </div>`;
+  }).join('');
+}
+document.getElementById('filters').addEventListener('click',e=>{
+  const chip=e.target.closest('.chip');if(!chip)return;
+  document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));
+  chip.classList.add('active');activeTopic=chip.dataset.topic;renderPubs();
+});
+document.getElementById('pubSearch').addEventListener('input',e=>{query=e.target.value;renderPubs();});
+renderPubs();
+
+document.getElementById('bookList').innerHTML=BOOKS.map(b=>
+  `<div class="mini"><div class="mt">${esc(b.t)}</div><div class="mv"><span class="yb">${b.y||'—'}</span> · ${esc(b.v)}</div></div>`).join('');
+const statusClass={"Forthcoming":"st-fc","Under review":"st-ur","In preparation":"st-ip"};
+document.getElementById('wipList').innerHTML=WIP.map(b=>
+  `<div class="mini"><div class="mt"><span class="status ${statusClass[b.s]||''}">${b.s}</span> ${esc(b.t)}</div><div class="mv">${esc(b.v)}</div></div>`).join('');
+
+/* ---------- theme ---------- */
+const root=document.documentElement, themeBtn=document.getElementById('themeBtn');
+const saved=localStorage.getItem('theme');
+if(saved){root.setAttribute('data-theme',saved);}
+else if(window.matchMedia('(prefers-color-scheme: dark)').matches){root.setAttribute('data-theme','dark');}
+themeBtn.addEventListener('click',()=>{
+  const now=root.getAttribute('data-theme')==='dark'?'light':'dark';
+  root.setAttribute('data-theme',now);localStorage.setItem('theme',now);
+});
+
+/* ---------- mobile menu ---------- */
+const navLinks=document.getElementById('navLinks');
+document.getElementById('menuBtn').addEventListener('click',()=>navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+
+/* ---------- nav scroll state + active link ---------- */
+const nav=document.getElementById('nav');
+const links=[...document.querySelectorAll('.nav-links a')];
+const sections=links.map(a=>document.querySelector(a.getAttribute('href')));
+function onScroll(){
+  nav.classList.toggle('scrolled',window.scrollY>10);
+  let idx=0;
+  sections.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<=140)idx=i;});
+  links.forEach((l,i)=>l.classList.toggle('active',i===idx));
+}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+/* ---------- reveal on scroll ---------- */
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ---------- animated stat counters ---------- */
+const counters=document.querySelectorAll('.num[data-count]');
+const cio=new IntersectionObserver((entries)=>{
+  entries.forEach(en=>{
+    if(!en.isIntersecting)return;
+    const el=en.target,target=+el.dataset.count,suffix=el.dataset.suffix||'';
+    let cur=0;const step=Math.max(1,Math.round(target/40));
+    const tick=()=>{cur=Math.min(target,cur+step);el.textContent=cur+suffix;if(cur<target)requestAnimationFrame(tick);};
+    tick();cio.unobserve(el);
   });
-  </script>
-</div> <!-- /content -->
+},{threshold:.6});
+counters.forEach(c=>cio.observe(c));
 
-
-
-
-</body></html>
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
