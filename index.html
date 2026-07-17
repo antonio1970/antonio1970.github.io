@@ -275,6 +275,9 @@ header.nav.scrolled{border-bottom-color:var(--line)}
 :root[data-theme="dark"] .q2{background:#2a9d86;color:#eef1ee}
 :root[data-theme="dark"] .q3{background:#1c3a33;color:#8beed6}
 :root[data-theme="dark"] .q4{background:#3a3122;color:#e0b662}
+.cite-badge{font-size:.72rem;font-weight:700;letter-spacing:.02em;padding:4px 9px;border-radius:6px;white-space:nowrap;background:var(--surface);border:1px solid var(--accent);color:var(--accent);transition:.2s}
+.cite-badge:hover{background:var(--accent);color:#fff;text-decoration:none}
+:root[data-theme="dark"] .cite-badge:hover{color:#08110e}
 .topic-badge{font-size:.72rem;color:var(--ink-faint);font-weight:500;white-space:nowrap}
 .no-results{padding:40px;text-align:center;color:var(--ink-faint)}
 
@@ -564,52 +567,52 @@ footer .brand{font-size:1rem;display:block;margin-bottom:6px}
 <script>
 /* ---------- publications data ---------- */
 const PUBS = [
-  {y:2026,a:"Oryokot, B., Ssentongo, S., Oluka, A.I. et al. (with Rodríguez, A.)",t:"HIV viral-load suppression and associated factors among PLHIV with non-communicable diseases in Uganda's Teso Region: a cross-sectional retrospective study",v:"AIDS Research and Therapy, 23, 31",q:null,topic:"health",l:"https://doi.org/10.1186/s12981-026-00852-x"},
-  {y:2023,a:"Elasy, S., Amavilah, V., Yousri, D. & Rodríguez, A.",t:"The Corruption Trap in Africa: Causes and Consequences",v:"Asian Development Perspectives, 14(2), 65–82",q:null,topic:"development"},
-  {y:2023,a:"Billon, M., Rodríguez-Crespo, E. & Rodríguez Andrés, A.",t:"Broadband use and trade facilitation: Impacts on bilateral trade of Sub-Saharan countries",v:"African Development Review, 35(2), 113–125",q:1,topic:"ict",l:"https://onlinelibrary.wiley.com/doi/10.1111/1467-8268.12698"},
-  {y:2023,a:"Rodríguez Andrés, A. & Amavilah, V.",t:"Technological knowledge progress: Were famous laws almost correct in developing and emerging economies?",v:"PLoS ONE, 18(5): e0283107",q:1,topic:"knowledge",l:"https://doi.org/10.1371/journal.pone.0283107"},
-  {y:2024,a:"Rodríguez Andrés, A. & Amavilah, V.",t:"Knowledge Economy and the Economic Performance of African Countries: A Seemingly Unrelated and Recursive Approach",v:"Journal of the Knowledge Economy",q:2,topic:"knowledge",l:"https://link.springer.com/article/10.1007/s13132-022-01033-7"},
-  {y:2022,a:"Rodríguez Andrés, A. & Amavilah, V.H.",t:"Convergence in suicide rates in the FSU: A clustering approach",v:"Applied Economics Letters, 30(9), 1183–1188",q:3,topic:"health",l:"https://www.tandfonline.com/doi/abs/10.1080/13504851.2022.2041167"},
-  {y:2022,a:"Gitto, L. & Rodríguez Andrés, A.",t:"The impact of ICT on psychological well-being among elderly people: A university of the third age in southern Italy",v:"International Journal of Social Sciences and Education Research, 8(2), 111–119",q:null,topic:"health"},
-  {y:2021,a:"Rodríguez Andrés, A., Otero, A. & Amavilah, V.H.",t:"Using deep learning neural networks to predict the knowledge economy index for developing and emerging economies",v:"Expert Systems with Applications, 184, 115514",q:1,topic:"knowledge",l:"https://doi.org/10.1016/j.eswa.2021.115514"},
-  {y:2021,a:"Rodríguez Andrés, A., Amavilah, V.H.S. & Otero, A.",t:"Evaluation of technology clubs by clustering: A cautionary note",v:"Applied Economics, 53(52), 5989–6001",q:2,topic:"knowledge",l:"https://doi.org/10.1080/00036846.2021.1934393"},
-  {y:2021,a:"Rodríguez Andrés, A., Otero, A. & Amavilah, V.H.",t:"Knowledge Economy classification in African countries: A model-based clustering approach",v:"Information Technology for Development",q:1,topic:"knowledge",l:"https://doi.org/10.1080/02681102.2021.1950597"},
-  {y:2020,a:"Gitto, L., Noh, Y.-H. & Rodríguez Andrés, A.",t:"Have lifestyle factors led to perceiving a higher level of stress? Implications for mental-health policy in South Korea",v:"Journal of Asian Public Policy, 13(3), 257–276",q:1,topic:"health",l:"https://doi.org/10.1080/17516234.2018.1563035"},
-  {y:2020,a:"Rodríguez, A., Leigh, A. & Kim, D.H.",t:"Sex-specific impact of changes in job status on suicidal ideation",v:"Crisis, 41(2)",q:2,topic:"health"},
-  {y:2020,a:"Asongu, S. & Rodríguez, A.",t:"Trajectories of knowledge economy in SSA and MENA countries",v:"Technology in Society, 63",q:1,topic:"knowledge",l:"https://doi.org/10.1016/j.techsoc.2019.03.002"},
-  {y:2019,a:"Polat, B. & Rodríguez, A.",t:"Do emigrants' remittances cause Dutch disease? A developing-countries case study",v:"The Economic and Labour Relations Review, 30(1), 59–76",q:3,topic:"development"},
-  {y:2019,a:"Asongu, S., Amavilah, V. & Rodríguez, A.",t:"Business Dynamics, Knowledge Economy, and the Economic Performance of African Countries",v:"Information Development",q:2,topic:"knowledge"},
-  {y:2017,a:"Polat, B. & Rodríguez, A.",t:"Trade openness, labor-market rigidity, and growth: A dynamic panel-data analysis",v:"The Economic and Labour Relations Review, 28(4), 555–564",q:3,topic:"development",l:"https://doi.org/10.1177/1035304617722904"},
-  {y:2017,a:"Amavilah, V., Asongu, S. & Rodríguez, A.",t:"Effects of globalization on peace and stability: Implications for governance and the knowledge economy of African countries",v:"Technological Forecasting and Social Change, 122, 91–103",q:1,topic:"knowledge"},
-  {y:2017,a:"Rodríguez, A. & Asongu, S.",t:"The impact of software piracy on human development: Evidence from Africa",v:"International Review of Applied Economics, 31(5), 585–607",q:2,topic:"piracy"},
-  {y:2016,a:"Rodríguez, A. & Salahodjaev, R.",t:"Do cognitively able societies nurture entrepreneurs?",v:"Economics Bulletin, 36(3), 1453–1462",q:4,topic:"development"},
-  {y:2016,a:"Rodríguez, A. & Rustemoglu, H.",t:"Determinants of CO₂ emissions in Brazil and Russia, 1992–2011: A decomposition analysis",v:"Environmental Science and Policy, 58, 95–106",q:1,topic:"environment",l:"https://doi.org/10.1016/j.envsci.2016.01.012"},
-  {y:2016,a:"El Bialy, N., Hawash, R. & Rodríguez, A.",t:"Explaining software piracy using a new set of indicators",v:"Journal of the Knowledge Economy, 7(2), 526–544",q:2,topic:"piracy"},
-  {y:2015,a:"Rodríguez, A. & Asongu, S.",t:"Global trajectories, dynamics, and tendencies of business software piracy: Benchmarking IPR harmonization",v:"Journal of Economic Studies, 43(5), 780–800",q:2,topic:"piracy"},
-  {y:2015,a:"Rodríguez, A., Gitto, L. & Noh, Y.-H.",t:"An instrumental-variable probit analysis of depressed mood in Korea: gender differences and socio-economic factors",v:"International Journal of Health Policy and Management, 4(8), 523–530",q:1,topic:"health"},
-  {y:2015,a:"Rodríguez, A., Asongu, S. & Amavilah, V.",t:"The impact of formal institutions on the knowledge economy",v:"Journal of the Knowledge Economy, 6(4), 1034–1062",q:2,topic:"knowledge"},
-  {y:2014,a:"Dasgupta, P., Mitra, S., Chakraborty, B. & Rodríguez, A.",t:"Relative significance of socio-economic triggers for mental-health outcomes in India",v:"Journal of Behavioral and Experimental Economics, 50, 50–57",q:2,topic:"health"},
-  {y:2014,a:"Brinda, E.M., Enemark, U. & Rodríguez, A.",t:"Out-of-pocket and catastrophic health expenditure in Tanzania: National Household Survey",v:"BMC International Health and Human Rights, 14:5",q:1,topic:"health",l:"https://doi.org/10.1186/1472-698X-14-5"},
-  {y:2013,a:"Rodríguez, A. & Asongu, S.",t:"Global dynamics timelines for IPR harmonization against software piracy",v:"Economics Bulletin, 33, 874–880",q:4,topic:"piracy"},
-  {y:2013,a:"Rodríguez, A. & Asongu, S.",t:"Fighting piracy, protecting intellectual property rights: which governance tools matter in Africa?",v:"Journal of Business Ethics, 118, 667–682",q:1,topic:"piracy"},
-  {y:2013,a:"Ponzo, M., Rodríguez, A. & De Luca, G.",t:"Immigrant status and health-care utilization in Italy",v:"International Journal of Health Care Finance and Economics, 13, 1–31",q:3,topic:"health"},
-  {y:2012,a:"Halicioglu, F., Yamamura, E. & Rodríguez, A.",t:"Modeling crime in Japan",v:"Economic Modelling, 29, 1640–1645",q:1,topic:"development"},
-  {y:2012,a:"Yamamura, E., Selini, M. & Rodríguez, A.",t:"Does corruption affect suicide? Empirical evidence from OECD countries",v:"Atlantic Economic Journal, 40, 133–145",q:4,topic:"health"},
-  {y:2012,a:"Rodríguez, A. & Goel, R.K.",t:"Does software piracy affect economic growth? Evidence across countries",v:"Journal of Policy Modeling, 34, 284–295",q:1,topic:"piracy"},
-  {y:2011,a:"Rodríguez, A., Yamamura, E. & Halicioglu, F.",t:"Socio-economic determinants of suicide in Japan",v:"Journal of Socio-Economics, 40, 723–731",q:2,topic:"health"},
-  {y:2011,a:"Rodríguez, A. & Goel, R.K.",t:"Corruption and global software piracy: Are piracy rates greater in more corrupt nations?",v:"Policy & Internet, 3, 1–22",q:1,topic:"piracy"},
-  {y:2011,a:"Gallet, C.A. & Rodríguez, A.",t:"International evidence on the determinants of alcohol-advertising restrictions",v:"Applied Economics Letters, 18, 1359–1362",q:3,topic:"health"},
-  {y:2011,a:"Dobson, C. & Rodríguez, A.",t:"Is corruption really bad for inequality? Evidence from Latin America",v:"Journal of Development Studies, 47, 959–976",q:2,topic:"development"},
-  {y:2011,a:"Hempstead, K. & Rodríguez, A.",t:"Gun control and suicide: The impact of state firearm regulations in the US, 1995–2004",v:"Health Policy, 101, 95–103",q:1,topic:"health"},
-  {y:2011,a:"Rodríguez, A. & Halicioglu, F.",t:"Testing the hypotheses of the natural suicide rates: Further evidence from OECD data",v:"Economic Modelling, 28, 22–26",q:1,topic:"health"},
-  {y:2010,a:"Rodríguez, A. & Halicioglu, F.",t:"Determinants of suicides in Denmark: Evidence from time-series data",v:"Health Policy, 98, 263–269",q:1,topic:"health"},
-  {y:2010,a:"Rodríguez, A., Collings, S. & Qin, P.",t:"Sex-specific impact of socio-economic factors on suicide risk: A population-based case-control study in Denmark",v:"European Journal of Public Health, 20, 265–270",q:1,topic:"health"},
-  {y:2008,a:"Minoiu, C. & Rodríguez, A.",t:"The effect of public spending on suicide: Evidence from US state data",v:"The Journal of Socio-Economics, 37, 237–261",q:2,topic:"health"},
-  {y:2006,a:"Rodríguez, A.",t:"The relationship between copyright software protection and piracy: Evidence from Europe",v:"European Journal of Law and Economics, 21, 29–51",q:2,topic:"piracy"},
-  {y:2006,a:"Rodríguez, A.",t:"Software piracy and income inequality",v:"Applied Economics Letters, 13, 101–105",q:3,topic:"piracy"},
-  {y:2005,a:"Rodríguez, A.",t:"Income inequality, unemployment and suicide: A panel-data investigation of 15 European countries",v:"Applied Economics, 37, 439–451",q:2,topic:"health"},
-  {y:2004,a:"Rodríguez, A.",t:"Determinants of self-reported mental health using the British Household Panel Survey",v:"Journal of Mental Health Policy and Economics, 3, 99–106",q:1,topic:"health"},
-  {y:1998,a:"Rodríguez, A. & Pérez-Amaral, T.",t:"Universal service and demand for telephone lines in Spain",v:"Information Economics and Policy, 10, 501–514",q:1,topic:"ict"}
+  {y:2026,a:"Oryokot, B., Ssentongo, S., Oluka, A.I. et al. (with Rodríguez, A.)",t:"HIV viral-load suppression and associated factors among PLHIV with non-communicable diseases in Uganda's Teso Region: a cross-sectional retrospective study",v:"AIDS Research and Therapy, 23, 31",q:null,topic:"health",l:"https://doi.org/10.1186/s12981-026-00852-x",c:0},
+  {y:2023,a:"Elasy, S., Amavilah, V., Yousri, D. & Rodríguez, A.",t:"The Corruption Trap in Africa: Causes and Consequences",v:"Asian Development Perspectives, 14(2), 65–82",q:null,topic:"development",c:0},
+  {y:2023,a:"Billon, M., Rodríguez-Crespo, E. & Rodríguez Andrés, A.",t:"Broadband use and trade facilitation: Impacts on bilateral trade of Sub-Saharan countries",v:"African Development Review, 35(2), 113–125",q:1,topic:"ict",l:"https://onlinelibrary.wiley.com/doi/10.1111/1467-8268.12698",c:11},
+  {y:2023,a:"Rodríguez Andrés, A. & Amavilah, V.",t:"Technological knowledge progress: Were famous laws almost correct in developing and emerging economies?",v:"PLoS ONE, 18(5): e0283107",q:1,topic:"knowledge",l:"https://doi.org/10.1371/journal.pone.0283107",c:1},
+  {y:2024,a:"Rodríguez Andrés, A. & Amavilah, V.",t:"Knowledge Economy and the Economic Performance of African Countries: A Seemingly Unrelated and Recursive Approach",v:"Journal of the Knowledge Economy",q:2,topic:"knowledge",l:"https://link.springer.com/article/10.1007/s13132-022-01033-7",c:11},
+  {y:2022,a:"Rodríguez Andrés, A. & Amavilah, V.H.",t:"Convergence in suicide rates in the FSU: A clustering approach",v:"Applied Economics Letters, 30(9), 1183–1188",q:3,topic:"health",l:"https://www.tandfonline.com/doi/abs/10.1080/13504851.2022.2041167",c:2},
+  {y:2022,a:"Gitto, L. & Rodríguez Andrés, A.",t:"The impact of ICT on psychological well-being among elderly people: A university of the third age in southern Italy",v:"International Journal of Social Sciences and Education Research, 8(2), 111–119",q:null,topic:"health",c:1},
+  {y:2021,a:"Rodríguez Andrés, A., Otero, A. & Amavilah, V.H.",t:"Using deep learning neural networks to predict the knowledge economy index for developing and emerging economies",v:"Expert Systems with Applications, 184, 115514",q:1,topic:"knowledge",l:"https://doi.org/10.1016/j.eswa.2021.115514",c:47},
+  {y:2021,a:"Rodríguez Andrés, A., Amavilah, V.H.S. & Otero, A.",t:"Evaluation of technology clubs by clustering: A cautionary note",v:"Applied Economics, 53(52), 5989–6001",q:2,topic:"knowledge",l:"https://doi.org/10.1080/00036846.2021.1934393",c:6},
+  {y:2021,a:"Rodríguez Andrés, A., Otero, A. & Amavilah, V.H.",t:"Knowledge Economy classification in African countries: A model-based clustering approach",v:"Information Technology for Development",q:1,topic:"knowledge",l:"https://doi.org/10.1080/02681102.2021.1950597",c:9},
+  {y:2020,a:"Gitto, L., Noh, Y.-H. & Rodríguez Andrés, A.",t:"Have lifestyle factors led to perceiving a higher level of stress? Implications for mental-health policy in South Korea",v:"Journal of Asian Public Policy, 13(3), 257–276",q:1,topic:"health",l:"https://doi.org/10.1080/17516234.2018.1563035",c:1},
+  {y:2020,a:"Rodríguez, A., Leigh, A. & Kim, D.H.",t:"Sex-specific impact of changes in job status on suicidal ideation",v:"Crisis, 41(2)",q:2,topic:"health",c:12},
+  {y:2020,a:"Asongu, S. & Rodríguez, A.",t:"Trajectories of knowledge economy in SSA and MENA countries",v:"Technology in Society, 63",q:1,topic:"knowledge",l:"https://doi.org/10.1016/j.techsoc.2019.03.002",c:55},
+  {y:2019,a:"Polat, B. & Rodríguez, A.",t:"Do emigrants' remittances cause Dutch disease? A developing-countries case study",v:"The Economic and Labour Relations Review, 30(1), 59–76",q:3,topic:"development",c:39},
+  {y:2019,a:"Asongu, S., Amavilah, V. & Rodríguez, A.",t:"Business Dynamics, Knowledge Economy, and the Economic Performance of African Countries",v:"Information Development",q:2,topic:"knowledge",c:13},
+  {y:2017,a:"Polat, B. & Rodríguez, A.",t:"Trade openness, labor-market rigidity, and growth: A dynamic panel-data analysis",v:"The Economic and Labour Relations Review, 28(4), 555–564",q:3,topic:"development",l:"https://doi.org/10.1177/1035304617722904",c:7},
+  {y:2017,a:"Amavilah, V., Asongu, S. & Rodríguez, A.",t:"Effects of globalization on peace and stability: Implications for governance and the knowledge economy of African countries",v:"Technological Forecasting and Social Change, 122, 91–103",q:1,topic:"knowledge",c:201},
+  {y:2017,a:"Rodríguez, A. & Asongu, S.",t:"The impact of software piracy on human development: Evidence from Africa",v:"International Review of Applied Economics, 31(5), 585–607",q:2,topic:"piracy",c:14},
+  {y:2016,a:"Rodríguez, A. & Salahodjaev, R.",t:"Do cognitively able societies nurture entrepreneurs?",v:"Economics Bulletin, 36(3), 1453–1462",q:4,topic:"development",c:0},
+  {y:2016,a:"Rodríguez, A. & Rustemoglu, H.",t:"Determinants of CO₂ emissions in Brazil and Russia, 1992–2011: A decomposition analysis",v:"Environmental Science and Policy, 58, 95–106",q:1,topic:"environment",l:"https://doi.org/10.1016/j.envsci.2016.01.012",c:131},
+  {y:2016,a:"El Bialy, N., Hawash, R. & Rodríguez, A.",t:"Explaining software piracy using a new set of indicators",v:"Journal of the Knowledge Economy, 7(2), 526–544",q:2,topic:"piracy",c:4},
+  {y:2015,a:"Rodríguez, A. & Asongu, S.",t:"Global trajectories, dynamics, and tendencies of business software piracy: Benchmarking IPR harmonization",v:"Journal of Economic Studies, 43(5), 780–800",q:2,topic:"piracy",c:19},
+  {y:2015,a:"Rodríguez, A., Gitto, L. & Noh, Y.-H.",t:"An instrumental-variable probit analysis of depressed mood in Korea: gender differences and socio-economic factors",v:"International Journal of Health Policy and Management, 4(8), 523–530",q:1,topic:"health",c:21},
+  {y:2015,a:"Rodríguez, A., Asongu, S. & Amavilah, V.",t:"The impact of formal institutions on the knowledge economy",v:"Journal of the Knowledge Economy, 6(4), 1034–1062",q:2,topic:"knowledge",c:213},
+  {y:2014,a:"Dasgupta, P., Mitra, S., Chakraborty, B. & Rodríguez, A.",t:"Relative significance of socio-economic triggers for mental-health outcomes in India",v:"Journal of Behavioral and Experimental Economics, 50, 50–57",q:2,topic:"health",c:7},
+  {y:2014,a:"Brinda, E.M., Enemark, U. & Rodríguez, A.",t:"Out-of-pocket and catastrophic health expenditure in Tanzania: National Household Survey",v:"BMC International Health and Human Rights, 14:5",q:1,topic:"health",l:"https://doi.org/10.1186/1472-698X-14-5",c:203},
+  {y:2013,a:"Rodríguez, A. & Asongu, S.",t:"Global dynamics timelines for IPR harmonization against software piracy",v:"Economics Bulletin, 33, 874–880",q:4,topic:"piracy",c:33},
+  {y:2013,a:"Rodríguez, A. & Asongu, S.",t:"Fighting piracy, protecting intellectual property rights: which governance tools matter in Africa?",v:"Journal of Business Ethics, 118, 667–682",q:1,topic:"piracy",c:127},
+  {y:2013,a:"Ponzo, M., Rodríguez, A. & De Luca, G.",t:"Immigrant status and health-care utilization in Italy",v:"International Journal of Health Care Finance and Economics, 13, 1–31",q:3,topic:"health",c:120},
+  {y:2012,a:"Halicioglu, F., Yamamura, E. & Rodríguez, A.",t:"Modeling crime in Japan",v:"Economic Modelling, 29, 1640–1645",q:1,topic:"development",c:54},
+  {y:2012,a:"Yamamura, E., Selini, M. & Rodríguez, A.",t:"Does corruption affect suicide? Empirical evidence from OECD countries",v:"Atlantic Economic Journal, 40, 133–145",q:4,topic:"health",c:27},
+  {y:2012,a:"Rodríguez, A. & Goel, R.K.",t:"Does software piracy affect economic growth? Evidence across countries",v:"Journal of Policy Modeling, 34, 284–295",q:1,topic:"piracy",c:66},
+  {y:2011,a:"Rodríguez, A., Yamamura, E. & Halicioglu, F.",t:"Socio-economic determinants of suicide in Japan",v:"Journal of Socio-Economics, 40, 723–731",q:2,topic:"health",c:90},
+  {y:2011,a:"Rodríguez, A. & Goel, R.K.",t:"Corruption and global software piracy: Are piracy rates greater in more corrupt nations?",v:"Policy & Internet, 3, 1–22",q:1,topic:"piracy",c:42},
+  {y:2011,a:"Gallet, C.A. & Rodríguez, A.",t:"International evidence on the determinants of alcohol-advertising restrictions",v:"Applied Economics Letters, 18, 1359–1362",q:3,topic:"health",c:2},
+  {y:2011,a:"Dobson, C. & Rodríguez, A.",t:"Is corruption really bad for inequality? Evidence from Latin America",v:"Journal of Development Studies, 47, 959–976",q:2,topic:"development",c:214},
+  {y:2011,a:"Hempstead, K. & Rodríguez, A.",t:"Gun control and suicide: The impact of state firearm regulations in the US, 1995–2004",v:"Health Policy, 101, 95–103",q:1,topic:"health",c:231},
+  {y:2011,a:"Rodríguez, A. & Halicioglu, F.",t:"Testing the hypotheses of the natural suicide rates: Further evidence from OECD data",v:"Economic Modelling, 28, 22–26",q:1,topic:"health",c:32},
+  {y:2010,a:"Rodríguez, A. & Halicioglu, F.",t:"Determinants of suicides in Denmark: Evidence from time-series data",v:"Health Policy, 98, 263–269",q:1,topic:"health",c:93},
+  {y:2010,a:"Rodríguez, A., Collings, S. & Qin, P.",t:"Sex-specific impact of socio-economic factors on suicide risk: A population-based case-control study in Denmark",v:"European Journal of Public Health, 20, 265–270",q:1,topic:"health",c:105},
+  {y:2008,a:"Minoiu, C. & Rodríguez, A.",t:"The effect of public spending on suicide: Evidence from US state data",v:"The Journal of Socio-Economics, 37, 237–261",q:2,topic:"health",c:170},
+  {y:2006,a:"Rodríguez, A.",t:"The relationship between copyright software protection and piracy: Evidence from Europe",v:"European Journal of Law and Economics, 21, 29–51",q:2,topic:"piracy",c:144},
+  {y:2006,a:"Rodríguez, A.",t:"Software piracy and income inequality",v:"Applied Economics Letters, 13, 101–105",q:3,topic:"piracy",c:124},
+  {y:2005,a:"Rodríguez, A.",t:"Income inequality, unemployment and suicide: A panel-data investigation of 15 European countries",v:"Applied Economics, 37, 439–451",q:2,topic:"health",c:348},
+  {y:2004,a:"Rodríguez, A.",t:"Determinants of self-reported mental health using the British Household Panel Survey",v:"Journal of Mental Health Policy and Economics, 3, 99–106",q:1,topic:"health",c:38},
+  {y:1998,a:"Rodríguez, A. & Pérez-Amaral, T.",t:"Universal service and demand for telephone lines in Spain",v:"Information Economics and Policy, 10, 501–514",q:1,topic:"ict",c:15}
 ];
 
 const BOOKS = [
@@ -657,6 +660,7 @@ function renderPubs(){
   if(!rows.length){pubList.innerHTML='<div class="no-results">No publications match your search.</div>';return;}
   pubList.innerHTML=rows.map(p=>{
     const qb=p.q?`<span class="q-badge q${p.q}">JCR Q${p.q}</span>`:'';
+    const cb=p.c?`<a class="cite-badge" href="https://scholar.google.com/citations?user=CR6pB10AAAAJ&hl=en" target="_blank" rel="noopener" title="Citations on Google Scholar">Cited by ${p.c}</a>`:'';
     const title=p.l?`<a href="${p.l}" target="_blank" rel="noopener">${esc(p.t)}</a>`:esc(p.t);
     return `<div class="pub">
       <div class="yr">${p.y}</div>
@@ -665,7 +669,7 @@ function renderPubs(){
         <div class="authors">${esc(p.a)}</div>
         <div class="venue">${esc(p.v)}</div>
       </div>
-      <div class="meta">${qb}<span class="topic-badge">${topicLabels[p.topic]||''}</span></div>
+      <div class="meta">${qb}${cb}<span class="topic-badge">${topicLabels[p.topic]||''}</span></div>
     </div>`;
   }).join('');
 }
