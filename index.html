@@ -239,6 +239,13 @@ header.nav.scrolled{border-bottom-color:var(--line)}
 .teach-note .thesis-list li{line-height:1.55}
 .teach-note .thesis-list strong{color:var(--ink)}
 .teach-note .thesis-list em{color:var(--ink)}
+.teach-philosophy{margin-bottom:34px;padding:24px 26px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.teach-philosophy h4{font-size:1.15rem;margin-bottom:12px;display:flex;align-items:center;gap:9px}
+.teach-philosophy p{color:var(--ink-soft);margin:0 0 12px;font-size:.99rem}
+.teach-philosophy p:last-child{margin-bottom:0}
+.teach-philosophy .tp-points{list-style:none;padding:0;margin:6px 0 12px;display:grid;gap:9px}
+.teach-philosophy .tp-points li{position:relative;padding-left:22px;color:var(--ink-soft);line-height:1.5;font-size:.99rem}
+.teach-philosophy .tp-points li::before{content:"▹";position:absolute;left:0;color:var(--accent);font-weight:700}
 
 /* ---------- publications ---------- */
 .pub-controls{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:30px}
@@ -480,6 +487,20 @@ footer .brand{font-size:1rem;display:block;margin-bottom:6px}
       <h2>In the classroom</h2>
       <p>More than twenty years teaching economics and econometrics — on-site and online — across Europe, Latin America, Africa, and the Middle East.</p>
     </div>
+
+    <div class="teach-philosophy reveal">
+      <h4><span class="ic">🧭</span> Teaching philosophy</h4>
+      <p>I teach economics and statistics as tools for thinking — ways of understanding the world that help students make better decisions in their careers and their lives. My aim is to convey intuition first: the essence of economics or econometrics can be grasped irrespective of the level of mathematics, so I foreground the meaning behind the models rather than the technicalities.</p>
+      <p>Because classrooms are diverse, I present the same idea in several forms — moving between verbal intuition, graphs, and equations so every student finds a natural handhold. I anchor concepts in the real world with short video clips (from Argentine hyperinflation to the Phillips curve) and hands-on RStudio labs built on data students recognise, including Egypt.</p>
+      <ul class="tp-points">
+        <li><strong>Econometrics beyond the math:</strong> a strong emphasis on what parameters mean and on identification, alongside programming and data-science skills — a crash course in R, and projects written in LaTeX/Overleaf and R&nbsp;Markdown.</li>
+        <li><strong>Advanced methods, hands-on:</strong> machine-learning topics taught through interactive <em>learnr</em> labs on RStudio Cloud, with research projects and referee-report assignments.</li>
+        <li><strong>Authentic assessment:</strong> research papers, oral presentations on topics relevant to MENA countries, and peer refereeing — building critical thinking that carries beyond the exam.</li>
+        <li><strong>Online and inclusive:</strong> three years of online teaching at UNIR (Europe and LATAM) using concise, well-designed lectures and short instructional videos.</li>
+      </ul>
+      <p>Looking ahead, I am developing a <em>Data Science for Economists</em> course and working towards RStudio certified-trainer status, including short "knowledge-pill" videos for online learners.</p>
+    </div>
+
     <div class="teach-grid">
       <div class="teach-col reveal">
         <h4><span class="ic">📐</span> Econometrics &amp; Methods</h4>
